@@ -1,0 +1,51 @@
+body{
+    background: #EEEEEE;
+}
+.bg-full-height{
+    height: 100vh;
+    width: 100%;
+    background: url("../img/bg-header-home-img.jpg") no-repeat center;
+    background-size: cover;
+}
+.logo{
+    width: 90px;
+    height: 45px;
+}
+.navbar-toggler:focus{
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+.navbar-toggler:active{
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+.fa-bars{
+    font-size: 1.1em;
+    color: #707070;
+}
+.fa-times{
+    font-size: 1.1em;
+    color: #707070;
+}
+.item-menu-icon{
+    color: #4961CC;
+    float: right;
+    margin-right: 45%;
+}
+.profile-access-border{
+    border: 1px solid #344591;
+    border-radius: 12px;
+}
+.profile-access-border-dropdown{
+    border-radius: 0px 0px 12px 12px;
+
+}
+.user-connected{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.profile-name{
+    color:  #4961CC;
+}

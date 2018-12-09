@@ -1,39 +1,45 @@
 body{
     background: #EEEEEE;
 }
+/*BACKGROUND HEADER*/
 .bg-full-height{
-    height: 100vh;
-    width: 100%;
-    background: url("../img/bg-header-home-img.jpg") no-repeat center;
+    background: url("../img/bg-header-home-img.jpg") no-repeat center fixed;
     background-size: cover;
 }
+/*LOGO*/
 .logo{
     width: 90px;
     height: 45px;
 }
+/*ICON NAVBAR FOCUS*/
 .navbar-toggler:focus{
     background: none;
     border: none;
     box-shadow: none;
 }
+/*ICON NAVBAR ACTIVE*/
 .navbar-toggler:active{
     background: none;
     border: none;
     box-shadow: none;
 }
+/*ICON NAVBAR BARS*/
 .fa-bars{
     font-size: 1.1em;
     color: #707070;
 }
+/*ICON NAVBAR X*/
 .fa-times{
     font-size: 1.1em;
     color: #707070;
 }
+/*ICONS INSIDE THE MENU*/
 .item-menu-icon{
     color: #4961CC;
     float: right;
     margin-right: 45%;
 }
+/*BUTTON USER ACCESS*/
 .profile-access-border{
     border: 1px solid #344591;
     border-radius: 12px;
@@ -41,41 +47,50 @@ body{
 .profile-access-border-dropdown{
     border-radius: 0px 0px 12px 12px;
 }
+/*TEXT FOR CONNECTED USERS*/
 .user-connected{
     font-size: 15px;
     margin-bottom: 5px;
 }
+/*TEXT INSIDE THE USER BUTTON*/
 .profile-name{
     color:  #4961CC;
 }
+/*JUMBOTRON*/
 .search-box{
     background: rgba(0, 0, 0, .55);
 
 }
+/*TITLES*/
 h1.first-title{
     font-size: 20px;
     font-weight: 400;
+    margin-bottom: 20px; 
 }
 h2.second-title{
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 23px;
 }
+/*SEARCH BUTTON*/
 button.fa-search{
     background: #4961CC;
     border-radius: 0 4px 4px 0; 
-    border: 4px solid transparent;
+    border: 4px solid #4961CC;
     color: #FFF;
     font-size: 20px;
     margin-top: 15px;
     transition: .3s;
 }
+/*RECOMMENDED SEARCHS*/
 .input-group-prepend:hover{
     cursor: pointer;
 }
 #user-type{
     margin-top: 10px;
     width: 88%;
+    margin-right: auto;
+    margin-left: auto; 
 }
 #search{
     margin-top: 15px;
@@ -83,20 +98,22 @@ button.fa-search{
 }
 .list-group{
     border-radius: 0;
-    width: 85%;
+    width: 100%;
 }
 .list-group-item{
-    padding: 5px;
+    padding: 8px;
     border-radius: 0;  
     cursor: pointer;
     background: rgba(73, 97, 204, .70);
     color: white;
+    font-size: 18px;
 }
 
 .scrollSpy{
     position: relative;
 	overflow: auto;
-    height: 80px;
+    height: auto;
+    max-height: 86px;
 }
 option{
     font-size: 13px;
@@ -106,11 +123,58 @@ option{
     background: #344591de;
     color: #fff;
     font-weight: bold;
-    padding: 10px 0 10px 0;
+    font-size: 18px;
+    padding: 12px 0 12px 0;
     border-radius: 20px;
     transition: .3s;
 }
 .register-button:focus,button.fa-search:focus {
     border: 1px rgba(73, 97, 204, .70) solid;
     color: white;
+}
+@media (min-width:340px){
+    h1.first-title{
+        font-size: 22px;
+        font-weight: 400;
+    }
+    h2.second-title{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 25px;
+    }
+    .search-box{
+        margin-top: 50px;
+    }
+    .register-button{
+        margin-top: 80px;
+        margin-bottom: 15px;
+    }
+}
+@media (min-width:400px){
+    h1.first-title{
+        margin-top: 30px;
+        font-size: 24px;
+    }
+    .search-box{
+        padding-bottom: 50px;
+    }
+    h2.second-title{
+        font-size: 26px;
+    }
+    .register-button{
+        margin-top: 80px;
+        margin-bottom: 25px;
+    }
+    #user-type{
+        margin-top: 30px;
+    }
+    button.fa-search{
+        border: 10px solid #4961CC;
+    }
+    .list-group-item{
+        font-size: 20px;
+    }
+    .scrollSpy{
+        max-height: 94px;
+    }
 }

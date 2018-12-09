@@ -19,7 +19,7 @@ var text = document.getElementById("title"),
     select = document.getElementById('user-type');
 button = document.querySelectorAll('.register-button');
 
-select.addEventListener('click', function () {
+select.addEventListener('input', function () {
     if (select.value == "candidato") {
         text.textContent = "PROCURANDO A VAGA IDEAL?";
         button.forEach(function (e) {

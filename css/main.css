@@ -40,7 +40,6 @@ body{
 }
 .profile-access-border-dropdown{
     border-radius: 0px 0px 12px 12px;
-
 }
 .user-connected{
     font-size: 15px;
@@ -48,4 +47,70 @@ body{
 }
 .profile-name{
     color:  #4961CC;
+}
+.search-box{
+    background: rgba(0, 0, 0, .55);
+
+}
+h1.first-title{
+    font-size: 20px;
+    font-weight: 400;
+}
+h2.second-title{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 23px;
+}
+button.fa-search{
+    background: #4961CC;
+    border-radius: 0 4px 4px 0; 
+    border: 4px solid transparent;
+    color: #FFF;
+    font-size: 20px;
+    margin-top: 15px;
+    transition: .3s;
+}
+.input-group-prepend:hover{
+    cursor: pointer;
+}
+#user-type{
+    margin-top: 10px;
+    width: 88%;
+}
+#search{
+    margin-top: 15px;
+    border-radius: 4px 0 0 4px;
+}
+.list-group{
+    border-radius: 0;
+    width: 85%;
+}
+.list-group-item{
+    padding: 5px;
+    border-radius: 0;  
+    cursor: pointer;
+    background: rgba(73, 97, 204, .70);
+    color: white;
+}
+
+.scrollSpy{
+    position: relative;
+	overflow: auto;
+    height: 80px;
+}
+option{
+    font-size: 13px;
+    cursor: pointer;
+}
+.register-button{
+    background: #344591de;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+    border-radius: 20px;
+    transition: .3s;
+}
+.register-button:focus,button.fa-search:focus {
+    border: 1px rgba(73, 97, 204, .70) solid;
+    color: white;
 }

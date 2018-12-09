@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="cache-control" content="no-cache" />
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
@@ -45,7 +44,8 @@
                         <a class="nav-link text-body" href="#">Como funciona <span class="item-menu-icon fas fa-question-circle"></span></a>
                     </li>
                     <span class="dropdown-divider"></span>
-                    <div class="profile-logged"> <!-- d-none to disappear-->
+                    <div class="profile-logged">
+                        <!-- d-none to disappear-->
                         <p class="user-connected text-center">Conectado como:</p>
                         <li class="nav-item profile-access-border dropdown text-center">
                             <a class="nav-link dropdown-toggle profile-name" href="#" id="profile-options" role="button"
@@ -62,11 +62,33 @@
                 </ul>
             </div>
         </nav>
-        
+        <div class="container">
+            <div class="jumbotron search-box mt-5 pt-3">
+                <h1 class="text-white first-title h5 text-center" id="title">PROCURANDO A VAGA IDEAL?</h1>
+                <h2 class="text-white h4 text-center second-title ">NÓS ACHAMOS PARA VOCÊ!</h2>
+                <form action="post" autocomplete="off">
+                    <div class="form-group text-center">
+                        <label for="user-type" class="d-none">Tipo do usuário</label>
+                        <select id="user-type" class="custom-select" name="user-type">
+                            <option selected value="candidato">Candidato</option>
+                            <option value="empresa">Empresa</option>
+                        </select>
+                    </div>
+                    <div class="input-group search-input">
+                        <label for="search" class="d-none">Buscar</label>
+                        <input type="text" class="form-control" placeholder="Digite o cargo ou função" name="search" id="search">
+                        <div class="input-group-prepend">
+                            <button type="submit" class="fas fa-search"></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <a role="button" href="#" class="btn btn-block register-button">CADASTRAR MEU CURRÍCULO!</a>
+        </div>
     </header>
 
     <script src="js/main.js"></script>
-
+    <script src="js/search.js"></script>
     <!-- SCRIPTS BOOTSTRAP E JAVASCRIPT -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

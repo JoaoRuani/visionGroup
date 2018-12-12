@@ -132,6 +132,69 @@ option{
     border: 1px rgba(73, 97, 204, .70) solid;
     color: white;
 }
+h2.h-medium{
+    font-size: 23px;
+    color: #707070;
+    margin-top: 20px; 
+}
+hr.sub{
+    width: 50px;
+    border: 4px solid #344591; 
+    border-radius: 10px;
+    margin-top: 8px;
+}
+.card-carousel{
+    border-color: transparent;
+    border-radius: 5;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .24);
+    margin-bottom: 10px;
+}
+.carousel-item-title{
+    font-size: 18px;
+    color: #344591;
+}
+.carousel-item-subtitle{
+    color: #707070;
+    font-size: 17px;
+}
+.carousel-item-price{
+    font-size: 23px;
+    color: #344591;
+    font-weight: 600;
+}
+.fadein {
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadein;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fadein {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fadein {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.fadeout {
+    -webkit-animation-name: fadeout;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadeout;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fadeout {
+    from {opacity: 1} 
+    to {opacity: .4}
+}
+  
+@keyframes fadeout {
+    from {opacity: 1} 
+    to {opacity: .4}
+}
 @media (min-width:340px){
     h1.first-title{
         font-size: 22px;
@@ -148,6 +211,7 @@ option{
     .register-button{
         margin-top: 80px;
         margin-bottom: 15px;
+        font-size: 20px;
     }
 }
 @media (min-width:400px){
@@ -164,6 +228,7 @@ option{
     .register-button{
         margin-top: 80px;
         margin-bottom: 25px;
+        font-size: 22px;
     }
     #user-type{
         margin-top: 30px;

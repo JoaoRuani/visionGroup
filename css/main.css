@@ -147,7 +147,7 @@ hr.sub{
     border-color: transparent;
     border-radius: 5;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, .24);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .carousel-item-title{
     font-size: 18px;
@@ -162,13 +162,49 @@ hr.sub{
     color: #344591;
     font-weight: 600;
 }
+.comments{
+    background: url("../img/grayBackground.png") no-repeat center;
+    background-size: cover;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .24);
+    padding: 13px 0 13px 0;
+}
+.perfil-img{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .24);
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+.comment{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.comment:last-child{
+    margin-bottom: 0;
+}
 .fadein {
     -webkit-animation-name: fadein;
     -webkit-animation-duration: 1.5s;
     animation-name: fadein;
     animation-duration: 1.5s;
 }
-  
+.comment-divider{
+    border-color: #383838;
+}
+.comment-name{
+    color: #707070;
+    font-style: italic;
+    font-size: 21px;
+    font-weight: 500;
+}
+.comment-profession{
+    color: #707070;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 400;
+}
+.comment-text{
+    color: #707070;
+}
 @-webkit-keyframes fadein {
     from {opacity: .4} 
     to {opacity: 1}

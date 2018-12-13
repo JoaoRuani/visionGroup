@@ -42,7 +42,7 @@ carousel.addEventListener("touchend", function(e){
         cont++;
         hideAll(carouselItens, carouselItens[cont % carouselItens.length]);
     }
-    else{
+    else if(swipediretion != undefined){
         cont--;
         hideAll(carouselItens, carouselItens[cont % carouselItens.length]); 
     }

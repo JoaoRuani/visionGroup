@@ -1,0 +1,31 @@
+/*FOOTER*/
+footer{
+    background: url("../img/footerBackground.jpeg") no-repeat center;
+    background-size: cover;
+}
+.list{
+    list-style-type: none;
+}
+.list, .list-link-item, .copyright{
+    color: #D3D3D3;
+    font-size: 14px;
+}
+.list-link-item:focus, .list-link-item:hover,.list-social-link:focus {
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+}
+.list-title{
+    color: #fff;
+    font-size: 15px;
+}
+.list-social-item{
+    display: inline-block;
+    font-size: 22px;
+    margin-right: 15px;
+}
+.list-social-link:focus, .list-social-link:hover{
+    color: white;
+}
+.list-social-link{
+    color: #D3D3D3;
+}

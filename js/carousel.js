@@ -8,7 +8,7 @@ if (width < 992) {
         startX,
         startY,
         dist,
-        threshold = 150, //required min distance traveled to be considered swipe
+        threshold = 200, //required min distance traveled to be considered swipe
         allowedTime = 200, // maximum time allowed to travel that distance
         elapsedTime,
         startTime,
@@ -21,12 +21,13 @@ if (width < 992) {
 
     carousel.addEventListener("touchstart", function (e) {
         var touchobj = e.changedTouches[0]
-        swipedir = 'none'
-        dist = 0
-        startX = touchobj.pageX
-        startTime = new Date().getTime() // record time when finger first makes contact with surface
         touching = true;
-        e.preventDefault()
+        swipedir = 'none';
+        dist = 0;
+        startX = touchobj.pageX;
+        startTime = new Date().getTime(); // record time when finger first makes contact with surface
+       
+        e.preventDefault();
     });
     carousel.addEventListener("touchmove", function (e) {
         e.preventDefault();
@@ -40,7 +41,7 @@ if (width < 992) {
                 swipediretion = (distX < 0) ? "left" : "right";
             }
         }
-        console.log(swipediretion);
+
         if (swipediretion == 'left') {
             cont++;
             hideAll(carouselItens, carouselItens[cont % carouselItens.length]);

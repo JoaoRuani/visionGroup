@@ -15,6 +15,8 @@
     <link rel="shortcut icon" href="img/favicon.png" />
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">    
+    <link rel="stylesheet" href="css/footer.css">
 
     <title>Vision Group</title>
 </head>
@@ -33,8 +35,7 @@
                     <p>Para ver os candidadatos você precisa registrar sua empresa</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <a role="button" href="www/cadastro-empresa/" class="btn btn-primary">Cadastrar</a>
                 </div>
             </div>
         </div>
@@ -54,10 +55,10 @@
                         <a class="nav-link text-body" href="#">Para o candidato <span class="item-menu-icon fas fa-user-tie"></span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-body" href="#">Cadastrar Currículo <span class="item-menu-icon fas fa-file-invoice"></span></a>
+                        <a class="nav-link text-body" id="CC" href="#">Cadastrar Currículo <span class="item-menu-icon fas fa-file-invoice"></span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-body" href="#">Cadastrar Empresa <span class="item-menu-icon fas fa-building"></span></a>
+                        <a class="nav-link text-body" id="CE" href="www/cadastro-empresa/">Cadastrar Empresa <span class="item-menu-icon fas fa-building"></span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-body" href="#">Como funciona <span class="item-menu-icon fas fa-question-circle"></span></a>
@@ -68,10 +69,9 @@
                         <p class="user-connected text-center d-lg-none">Conectado como:</p>
                         <li class="nav-item profile-access-border dropdown text-center">
                             <a class="nav-link dropdown-toggle profile-name" href="#" id="profile-options" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                João Vitor Ruani Negri
-                            </a>
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
                             <div class="dropdown-menu profile-access-border-dropdown" aria-labelledby="profile-options">
+                                <a class="dropdown-item profile-option" href="#"></a>
                                 <a class="dropdown-item profile-option" href="#"></a>
                                 <a class="dropdown-item profile-option" href="#"></a>
                                 <a class="dropdown-item profile-option" href="#"></a>
@@ -81,8 +81,6 @@
                 </ul>
             </div>
         </nav>
-
-
         <div class="container pb-5">
             <div class="jumbotron search-box mt-5 pt-3 mx-lg-5 px-lg-5">
                 <h1 class="text-white first-title h5 text-center" id="title">PROCURANDO A VAGA IDEAL?</h1>
@@ -128,10 +126,8 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the
                                 bulk of the
                                 card's content.</p>
-
                             <p class="carousel-item-price text-right mb-0">R$ 2.300,00</p>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -289,6 +285,8 @@
     <script src="js/main.js"></script>
     <script src="js/search.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/inputResize.js"></script>
     <!-- SCRIPTS BOOTSTRAP E JAVASCRIPT -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

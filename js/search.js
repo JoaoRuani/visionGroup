@@ -1,10 +1,11 @@
+width = window.innerWidth;
 if(width > 600){
     searchInput = document.getElementById('search');
     profissoes = ['Administrador', 'Advogado', 'Almoxarife', 'Analista de Qualidade', 'Analista de Riscos', 'Analista de Sistemas', 'Assessor', 'Assistente Administrativo', 'Auxiliar de enfermagem', 'Auxiliar de serviços gerais', 'Balconista', 'Barman', 'Caixa', 'Camareiro', 'Chefe de atendimento', 'Chefe de setor', 'Consultor', 'Contador', 'Coordenador', 'Cozinheiro', 'Designer', 'Eletricista', 'Engenheiro Civil', 'Motoboy', 'Tradutor', 'Zootecnista'];
 
     function autocomplete(inp, arr) {
         var form = document.querySelector("form"),
-                recommendedSearch = document.createElement('ul');
+            recommendedSearch = document.createElement('ul');
             recommendedSearch.classList.add('list-group');
             recommendedSearch.classList.add('recommended-search');
             recommendedSearch.classList.add('scrollSpy');

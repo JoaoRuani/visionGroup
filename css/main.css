@@ -6,51 +6,6 @@ body{
     background: url("../img/bg-header-home-img.jpg") no-repeat center fixed;
     background-size: cover;
 }
-/*LOGO*/
-.logo{
-    width: 90px;
-    height: 45px;
-}
-/*ICON NAVBAR FOCUS and ICON NAVBAR ACTIVE*/
-.navbar-toggler:focus, .navbar-toggler:active{
-    background: none;
-    border: none;
-    box-shadow: none;
-}
-
-/*ICON NAVBAR BARS*/
-.fa-bars{
-    font-size: 1.1em;
-    color: #707070;
-}
-/*ICON NAVBAR X*/
-.fa-times{
-    font-size: 1.1em;
-    color: #707070;
-}
-/*ICONS INSIDE THE MENU*/
-.item-menu-icon{
-    color: #4961CC;
-    float: right;
-    margin-right: 45%;
-}
-/*BUTTON USER ACCESS*/
-.profile-access-border{
-    border: 1px solid #344591;
-    border-radius: 12px;
-}
-.profile-access-border-dropdown{
-    border-radius: 0px 0px 12px 12px;
-}
-/*TEXT FOR CONNECTED USERS*/
-.user-connected{
-    font-size: 15px;
-    margin-bottom: 5px;
-}
-/*TEXT INSIDE THE USER BUTTON*/
-.profile-name{
-    color:  #4961CC;
-}
 /*JUMBOTRON*/
 .search-box{
     background: rgba(0, 0, 0, .55);
@@ -216,39 +171,6 @@ hr.sub{
     padding: 13px 0 13px 0;
     margin-bottom: 15px; 
 }
-
-/*FOOTER*/
-footer{
-    background: url("../img/footerBackground.jpeg") no-repeat center;
-    background-size: cover;
-}
-.list{
-    list-style-type: none;
-}
-.list, .list-link-item, .copyright{
-    color: #D3D3D3;
-    font-size: 14px;
-}
-.list-link-item:focus, .list-link-item:hover,.list-social-link:focus {
-    text-decoration: none;
-    color: rgb(236, 236, 236);
-}
-.list-title{
-    color: #fff;
-    font-size: 15px;
-}
-.list-social-item{
-    display: inline-block;
-    font-size: 22px;
-    margin-right: 15px;
-}
-.list-social-link:focus, .list-social-link:hover{
-    color: white;
-}
-.list-social-link{
-    color: #D3D3D3;
-}
-
 /*EFFECTS*/
 .fadein {
     -webkit-animation-name: fadein;

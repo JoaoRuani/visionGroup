@@ -20,14 +20,33 @@
 </head>
 
 <body>
+    <!-- modal -->
+    <div class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Para ver os candidadatos você precisa registrar sua empresa</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="bg-full-height">
-        <nav class="navbar bg-white shadow">
+        <nav class="navbar bg-white navbar-expand-lg shadow">
             <a class="navbar-brand" href="index.html"><img src="img/OfficialLogo.png" class="logo"></a>
             <button class="navbar-toggler btn-light btn" type="button" data-toggle="collapse" data-target="#navbar">
                 <span class="fas fa-bars" id="menu-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link text-body" href="#">Para a empresa <span class="item-menu-icon fas fa-briefcase"></span></a>
                     </li>
@@ -46,16 +65,16 @@
                     <span class="dropdown-divider"></span>
                     <div class="profile-logged">
                         <!-- d-none to disappear-->
-                        <p class="user-connected text-center">Conectado como:</p>
+                        <p class="user-connected text-center d-lg-none">Conectado como:</p>
                         <li class="nav-item profile-access-border dropdown text-center">
                             <a class="nav-link dropdown-toggle profile-name" href="#" id="profile-options" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 João Vitor Ruani Negri
                             </a>
                             <div class="dropdown-menu profile-access-border-dropdown" aria-labelledby="profile-options">
-                                <a class="dropdown-item" href="#">Painel Administrativo</a>
-                                <a class="dropdown-item" href="#">Currículo</a>
-                                <a class="dropdown-item" href="#">Vagas Aplicadas</a>
+                                <a class="dropdown-item profile-option" href="#"></a>
+                                <a class="dropdown-item profile-option" href="#"></a>
+                                <a class="dropdown-item profile-option" href="#"></a>
                             </div>
                         </li>
                     </div>
@@ -65,7 +84,7 @@
 
 
         <div class="container pb-5">
-            <div class="jumbotron search-box mt-5 pt-3">
+            <div class="jumbotron search-box mt-5 pt-3 mx-lg-5 px-lg-5">
                 <h1 class="text-white first-title h5 text-center" id="title">PROCURANDO A VAGA IDEAL?</h1>
                 <h2 class="text-white h4 text-center second-title ">NÓS ACHAMOS PARA VOCÊ!</h2>
                 <form action="post" autocomplete="off">
@@ -78,9 +97,10 @@
                     </div>
                     <div class="input-group search-input">
                         <label for="search" class="d-none">Buscar</label>
-                        <input type="text" class="form-control" placeholder="Digite o cargo ou função" name="search" id="search">
+                        <input type="text" class="form-control" required="required" placeholder="Digite o cargo ou função"
+                            name="search" id="search">
                         <div class="input-group-prepend">
-                            <button type="submit" class="fas fa-search"></button>
+                            <button type="submit" class="fas fa-search search-button"></button>
                         </div>
                     </div>
                 </form>
@@ -89,61 +109,97 @@
         </div>
     </header>
     <section class="container best-jobs">
-        <div class="text-center">
+        <div class="text-center mb-4">
             <h2 class="text-center h-medium">Confira as vagas mais visualizadas</h2>
             <hr class="sub">
         </div>
         <div class="carousel">
-            <div class="card card-carousel fadein">
-                <div class="card-body">
-                    <h5 class="card-title carousel-item-title">Engenheiro de software</h5>
-                    <p class="card-subtitle mb-2 text-muted font-italic carousel-item-subtitle">Presidente Prudente -
-                        SP</p>
-                    <p class="card-subtitle mb-2">Efetivo CLT</p>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+            <!-- Inicio do card da vaga -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card card-carousel fadein">
 
-                    <p class="carousel-item-price text-right mb-0">R$ 2.300,00</p>
+                        <div class="card-body">
+                            <h5 class="card-title carousel-item-title">Engenheiro de software</h5>
+                            <p class="card-subtitle mb-2 text-muted font-italic carousel-item-subtitle">Presidente
+                                Prudente -
+                                SP</p>
+                            <p class="card-subtitle mb-2">Efetivo CLT</p>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the
+                                card's content.</p>
+
+                            <p class="carousel-item-price text-right mb-0">R$ 2.300,00</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Final do card da vaga -->
+                    <div class="card card-carousel fadein">
+                        <div class="card-body">
+                            <h5 class="card-title carousel-item-title">Engenheiro de software</h5>
+                            <p class="card-subtitle mb-2 text-muted font-italic carousel-item-subtitle">Presidente
+                                Prudente -
+                                SP</p>
+                            <p class="card-subtitle mb-2">Efetivo CLT</p>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the
+                                card's content.</p>
+
+                            <p class="carousel-item-price text-right mb-0">R$ 2.600,00</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card card-carousel fadein">
-                <div class="card-body">
-                    <h5 class="card-title carousel-item-title">Engenheiro de software</h5>
-                    <p class="card-subtitle mb-2 text-muted font-italic carousel-item-subtitle">Presidente Prudente -
-                        SP</p>
-                    <p class="card-subtitle mb-2">Efetivo CLT</p>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card card-carousel fadein">
+                        <div class="card-body">
+                            <h5 class="card-title carousel-item-title">Engenheiro de software</h5>
+                            <p class="card-subtitle mb-2 text-muted font-italic carousel-item-subtitle">Presidente
+                                Prudente -
+                                SP</p>
+                            <p class="card-subtitle mb-2">Efetivo CLT</p>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the
+                                card's content.</p>
 
-                    <p class="carousel-item-price text-right mb-0">R$ 2.600,00</p>
+                            <p class="carousel-item-price text-right mb-0">R$ 2.900,00</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card card-carousel fadein">
-                <div class="card-body">
-                    <h5 class="card-title carousel-item-title">Engenheiro de software</h5>
-                    <p class="card-subtitle mb-2 text-muted font-italic carousel-item-subtitle">Presidente Prudente -
-                        SP</p>
-                    <p class="card-subtitle mb-2">Efetivo CLT</p>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                <div class="col-lg-6">
+                    <div class="card card-carousel fadein">
+                        <div class="card-body">
+                            <h5 class="card-title carousel-item-title">Engenheiro de software</h5>
+                            <p class="card-subtitle mb-2 text-muted font-italic carousel-item-subtitle">Presidente
+                                Prudente -
+                                SP</p>
+                            <p class="card-subtitle mb-2">Efetivo CLT</p>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the
+                                card's content.</p>
 
-                    <p class="carousel-item-price text-right mb-0">R$ 2.500,00</p>
+                            <p class="carousel-item-price text-right mb-0">R$ 2.500,00</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="comments">
-        <div class="container px-4">
+        <div class="container comments-area">
             <div class="text-center ">
-                <h2 class="text-center h-medium">Confira as vagas mais visualizadas</h2>
+                <h2 class="text-center h-medium">Veja a opinião de quem já utilizou</h2>
                 <hr class="sub">
             </div>
             <div class="comment">
                 <div class="row align-items-center mb-3">
-                    <div class="col-5">
+                    <div class="col-5 text-center">
                         <img src="img/perfil-image.jpg" class="perfil-img img-fluid" alt="aqui vem a descrição da imagem">
                     </div>
-                    <div class="col-7">
+                    <div class="col-7 ">
                         <h5 class="comment-name">Mark Zuckerberg</h5>
                         <p class="comment-profession">Facebook CEO</p>
                     </div>
@@ -155,7 +211,7 @@
             <hr class="comment-divider">
             <div class="comment">
                 <div class="row align-items-center mb-3">
-                    <div class="col-5">
+                    <div class="col-5 text-center">
                         <img src="img/perfil-image.jpg" class="perfil-img img-fluid" alt="aqui vem a descrição da imagem">
                     </div>
                     <div class="col-7">
@@ -176,29 +232,28 @@
                 <hr class="sub">
             </div>
             <div class="row justify-content-center align-items-center mt-5">
-                <div class="col-6 col-sm-4 mb-4">
-
-                    <img src="img/motorolaLogo.png" alt="logo Motorola" class="img-fluid">
+                <div class="col-6 col-sm-4 mb-4 text-center">
+                    <img src="img/motorolaLogo.png" alt="logo Motorola" class="img-fluid collaborator-logo">
                 </div>
-                <div class="col-6 col-sm-4 mb-4">
-                    <img src="img/OfficialLogo.png" alt="logo Vision Group" class="img-fluid">
+                <div class="col-6 col-sm-4 mb-4 text-center">
+                    <img src="img/OfficialLogo.png" alt="logo Vision Group" class="img-fluid collaborator-logo">
                 </div>
-                <div class="col-6 col-sm-4 mb-4">
-                    <img src="img/LG.png" alt="logo LG" class="img-fluid">
+                <div class="col-6 col-sm-4 mb-4 text-center">
+                    <img src="img/LG.png" alt="logo LG" class="img-fluid collaborator-logo">
                 </div>
-                <div class="col-6 col-sm-4 mb-4">
-                    <img src="img/logo1.png" alt="logo Mc Donalds" class="img-fluid">
+                <div class="col-6 col-sm-4 mb-4 text-center">
+                    <img src="img/logo1.png" alt="logo Mc Donalds" class="img-fluid collaborator-logo">
                 </div>
             </div>
 
 
-            <a role="button" href="#" class="btn btn-block register-button2">CADASTRAR MEU CURRÍCULO!</a>
+            <a role="button" href="#" class="btn btn-block register-button mt-3 blue">CADASTRAR MEU CURRÍCULO!</a>
         </div>
     </section>
     <footer>
         <div class="container pt-4">
             <div class="row">
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-sm-6 col-xl-4">
                     <h6 class="list-title">LINKS ÚTEIS</h6>
                     <ul class="list">
                         <li class="list-item"><a href="" class="list-link-item">Home</a></li>
@@ -208,17 +263,21 @@
                         <li class="list-item"><a href="" class="list-link-item">Educação Corporativa</a></li>
                         <li class="list-item"><a href="" class="list-link-item">Recrutamento Inteligente</a></li>
                     </ul>
-                    <h6 class="list-title">CONTATO</h6>
-                    <ul class="list">
-                        <li class="list-item">visiongroup@visiongroupsolucoes.com.br</li>
-                        <li class="list-item">(18) 98801-5611</li>
-                    </ul>
                 </div>
-                <div class="col-12 col-sm-6">
+
+
+                <div class="col-12 col-sm-6 col-xl-4">
                     <h6 class="list-title">ESTAMOS NAS REDES SOCIAIS</h6>
                     <ul class="list">
                         <li class="list-social-item"><a href="" class="list-social-link"><span class="fab fa-facebook-square"></a></li>
                         <li class="list-social-item"><a href="" class="list-social-link"><span class="fab fa-instagram"></span></a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-xl-4">
+                    <h6 class="list-title 4">CONTATO</h6>
+                    <ul class="list">
+                        <li class="list-item">visiongroup@visiongroupsolucoes.com.br</li>
+                        <li class="list-item">(18) 98801-5611</li>
                     </ul>
                 </div>
             </div>

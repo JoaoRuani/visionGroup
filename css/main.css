@@ -11,18 +11,13 @@ body{
     width: 90px;
     height: 45px;
 }
-/*ICON NAVBAR FOCUS*/
-.navbar-toggler:focus{
+/*ICON NAVBAR FOCUS and ICON NAVBAR ACTIVE*/
+.navbar-toggler:focus, .navbar-toggler:active{
     background: none;
     border: none;
     box-shadow: none;
 }
-/*ICON NAVBAR ACTIVE*/
-.navbar-toggler:active{
-    background: none;
-    border: none;
-    box-shadow: none;
-}
+
 /*ICON NAVBAR BARS*/
 .fa-bars{
     font-size: 1.1em;
@@ -83,7 +78,7 @@ button.fa-search{
     transition: .3s;
 }
 /*RECOMMENDED SEARCHS*/
-.input-group-prepend:hover{
+.input-group-prepend:hover, button.fa-search:hover{
     cursor: pointer;
 }
 #user-type{
@@ -108,7 +103,6 @@ button.fa-search{
     color: white;
     font-size: 18px;
 }
-
 .scrollSpy{
     position: relative;
 	overflow: auto;
@@ -116,7 +110,7 @@ button.fa-search{
     max-height: 86px;
 }
 option{
-    font-size: 13px;
+    font-size: 20px;
     cursor: pointer;
 }
 .register-button{
@@ -127,10 +121,17 @@ option{
     padding: 12px 0 12px 0;
     border-radius: 20px;
     transition: .3s;
+    border: 2px transparent solid;
 }
-.register-button:focus,button.fa-search:focus {
-    border: 1px rgba(73, 97, 204, .70) solid;
-    color: white;
+.blue{
+    background: #344591;
+}
+.register-button:hover,.register-button:focus {
+    border: 2px rgba(73, 97, 204, .70) solid;
+    color: #D3D3D3;
+}
+button.fa-search:hover{
+    color: #D3D3D3;
 }
 h2.h-medium{
     font-size: 23px;
@@ -138,11 +139,12 @@ h2.h-medium{
     margin-top: 20px; 
 }
 hr.sub{
-    width: 50px;
+    width: 48px;
     border: 4px solid #344591; 
     border-radius: 10px;
     margin-top: 8px;
 }
+/* CAROUSEL */
 .card-carousel{
     border-color: transparent;
     border-radius: 5;
@@ -162,6 +164,8 @@ hr.sub{
     color: #344591;
     font-weight: 600;
 }
+
+/*USERS COMMENTS*/
 .comments{
     background: url("../img/grayBackground.png") no-repeat center;
     background-size: cover;
@@ -175,6 +179,11 @@ hr.sub{
     width: 120px;
     border-radius: 50%;
 }
+/* ÁREA DE DEPOIMENTOS*/
+.comments-area{
+    padding-left: 40px;
+    padding-right: 40px;
+}
 .comment{
     margin-top: 40px;
     margin-bottom: 40px;
@@ -182,46 +191,33 @@ hr.sub{
 .comment:last-child{
     margin-bottom: 0;
 }
-.fadein {
-    -webkit-animation-name: fadein;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fadein;
-    animation-duration: 1.5s;
-}
 .comment-divider{
     border-color: #383838;
 }
-.comment-name{
+.comment-name, .comment-profession{
     color: #707070;
     font-style: italic;
+}
+.comment-name{
     font-size: 21px;
     font-weight: 500;
 }
 .comment-profession{
-    color: #707070;
-    font-style: italic;
     font-size: 15px;
     font-weight: 400;
 }
 .comment-text{
     color: #707070;
 }
+/*EMPRESAS QUE CONTRATAM*/
 .collaborators{
     background: #fff;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .24);
     padding: 13px 0 13px 0;
     margin-bottom: 15px; 
 }
-.register-button2{
-    background: #344591de;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 12px 0 12px 0;
-    border-radius: 20px;
-    transition: .3s;
-    margin-top: 20px;
-}
+
+/*FOOTER*/
 footer{
     background: url("../img/footerBackground.jpeg") no-repeat center;
     background-size: cover;
@@ -233,7 +229,7 @@ footer{
     color: #D3D3D3;
     font-size: 14px;
 }
-.list-link-item:focus,.list-social-link:focus {
+.list-link-item:focus, .list-link-item:hover,.list-social-link:focus {
     text-decoration: none;
     color: rgb(236, 236, 236);
 }
@@ -246,11 +242,19 @@ footer{
     font-size: 22px;
     margin-right: 15px;
 }
-.list-social-item:focus{
+.list-social-link:focus, .list-social-link:hover{
     color: white;
 }
 .list-social-link{
     color: #D3D3D3;
+}
+
+/*EFFECTS*/
+.fadein {
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadein;
+    animation-duration: 1.5s;
 }
 @-webkit-keyframes fadein {
     from {opacity: .4} 
@@ -324,5 +328,35 @@ footer{
     }
     .scrollSpy{
         max-height: 94px;
+    }
+}
+@media (min-width: 800px){
+    .collaborator-logo{
+        width: 200px;
+        height: auto;
+    }
+}
+@media (min-width: 768px) {
+    h1.first-title{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    h2.second-title{
+        font-size: 32px;
+        font-weight: 600;
+    }
+    h1.first-title, h2.second-title{
+        text-align: left;
+    }
+    .comments-area{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+@media (min-width: 992px){
+    .register-button{
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
     }
 }

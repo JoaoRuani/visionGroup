@@ -147,7 +147,7 @@ hr.sub{
     margin-bottom: 0;
 }
 .comment-divider{
-    border-color: #383838;
+    border-color: #bbb;
 }
 .comment-name, .comment-profession{
     color: #707070;
@@ -163,6 +163,9 @@ hr.sub{
 }
 .comment-text{
     color: #707070;
+}
+.comment:last-child{
+    padding-bottom: 15px;
 }
 /*EMPRESAS QUE CONTRATAM*/
 .collaborators{
@@ -271,8 +274,8 @@ hr.sub{
         text-align: left;
     }
     .comments-area{
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 }
 @media (min-width: 992px){
@@ -280,5 +283,21 @@ hr.sub{
         width: 50%;
         margin-right: auto;
         margin-left: auto;
+    }
+    .comment-text{
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+           
+    }
+    .comment-name{
+        font-size: 25px;
+    }
+    .comment-profession{
+        font-size: 20px;
+    }
+    .perfil-img{
+        height: 140px;
+        width: 140px;
     }
 }

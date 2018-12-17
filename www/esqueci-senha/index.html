@@ -14,13 +14,11 @@
 
     <link rel="shortcut icon" href="../../img/favicon.png" />
 
-    <!-- Alterar o css dependendo de onde o usuário veio -->
-    <link rel="stylesheet" href="../../css/confirmar-email.css">
-    
+    <link rel="stylesheet" href="../../css/login.css">
     <link rel="stylesheet" href="../../css/navbar.css">
     <link rel="stylesheet" href="../../css/cadastro.css">
 
-    <title>Confirme seu e-mail</title>
+    <title>Login</title>
 </head>
 
 <body>
@@ -33,13 +31,14 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link text-body" href="#" id="elogin">Para a empresa <span class="item-menu-icon fas fa-briefcase"></span></a>
+                        <a class="nav-link text-body" id="elogin" href="#">Para a empresa <span class="item-menu-icon fas fa-briefcase"></span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-body" href="#" id="clogin">Para o candidato <span class="item-menu-icon fas fa-user-tie"></span></a>
+                        <a class="nav-link text-body" id="clogin" href="#">Para o candidato <span class="item-menu-icon fas fa-user-tie"></span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-body" href="../cadastro-candidato/" id="CC">Cadastrar Currículo <span class="item-menu-icon fas fa-file-invoice"></span></a>
+                        <a class="nav-link text-body" href="../cadastro-candidato/" id="CC">Cadastrar Currículo <span
+                                class="item-menu-icon fas fa-file-invoice"></span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-body" href="../cadastro-empresa/" id="CE">Cadastrar Empresa <span class="item-menu-icon fas fa-building"></span></a>
@@ -69,21 +68,23 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-12">
                     <div class="jumbotron mx-1 mt-4 pt-3">
-                        <h1>Confirme seu endereço de e-mail</h1>
-                        <h2 class="mb-5">Informe o código de verificação que enviamos para o seu e-mail. Caso não consiga encontrá-lo, verifique sua pasta de spam.</h2>
+                        <h1>Esqueci a senha</h1>
+                        <h2 class="mb-5">Digite o e-mail cadastrado em sua conta. Nele serão enviadas as informações para a recuperação da senha.</h2>
                         <form method="POST" action="">
                             <div class="form-group">
-                                <label for="codigo" class="d-none">Inserir Código</label>
-                                <input type="text" class="form-control" placeholder="Inserir código" name="codigo" id="codigo">
+                                <label for="email" class="d-none">Digite seu E-mail</label>
+                                <input type="email" class="form-control" placeholder="E-mail" name="email" id="email">
                             </div>
-                            <small class="form-text error-message"></small>
+                            <small class="form-text text-muted mb-4">Tenha certeza que você possui acesso a esse
+                                e-mail.</small>
+                            <small class="form-text error-message mb-4"></small>
                             <div class="row mt-5 align-items-center">
                                 <div class="col-6 text-center ">
-                                    <!-- BOTÃO VOLTAR, ALTERAR O HREF DEPENDENDO DE ONDE O USUÁRIO VEIO-->
+                                    <!-- Botão voltar. Mudar o href dependendo de onde o usuário veio -->
                                     <a href="#" class="text-dark">Voltar</a>
                                 </div>
                                 <div class="col-6 text-center">
-                                    <button class="btn form-submit" type="submit">Verificar</button>
+                                    <button class="btn form-submit" type="submit">Continuar</button>
                                 </div>
                             </div>
                         </form>
@@ -103,7 +104,6 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>

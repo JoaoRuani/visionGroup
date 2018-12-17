@@ -2,9 +2,17 @@
 var text = document.getElementById("title"),
     select = document.getElementById('user-type'),
     button = document.querySelectorAll('.register-button');
-    button.forEach(function(e) {
-        e.href = 'www/cadastro-candidato/';
-    });
+button.forEach(function (e) {
+    e.href = 'www/cadastro-candidato/';
+});
+if (!logged) {
+    elogin.href = "www/login-empresa/";
+    clogin.href = "www/login-candidato/";
+}
+else{
+    elogin.href = "#";
+    clogin.href = "#";
+}
 select.addEventListener('input', function () {
     if (select.value == "candidato") {
         text.textContent = "PROCURANDO A VAGA IDEAL?";

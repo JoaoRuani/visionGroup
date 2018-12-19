@@ -1,6 +1,6 @@
 /*Variáveis que indicam se o usuário está logado, se é uma empresa, 
 o texto para as opções da compania e o texto para usuários*/
-var logged = true,
+var logged = false,
     isCompany = false,
     userName = "João Vitor",
     textCompany = ["Painel Administrativo", "Candidatos", "Vagas Abertas", "Sair"],

@@ -10,6 +10,7 @@ body{
     width: 130px;
     height: 130px;
     display:block;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .24);
 }
 .nome, .resumo{
     font-size: 22px;    

@@ -1,6 +1,6 @@
 /*Variáveis que indicam se o usuário está logado, se é uma empresa, 
 o texto para as opções da compania e o texto para usuários*/
-var logged = false,
+var logged = true,
     isCompany = false,
     userName = "João Vitor",
     textCompany = ["Painel Administrativo", "Candidatos", "Vagas Abertas", "Sair"],
@@ -23,11 +23,13 @@ else {
     CE.classList.add('d-none');
  
     if (isCompany) {
+        clogin.classList.add('d-none');
         for (i = 0; i < profileOptions.length; i++) {
             profileOptions[i].textContent = textCompany[i];
         }
     }
     else {
+        elogin.classList.add('d-none');
         for (i = 0; i < profileOptions.length; i++) {
             profileOptions[i].textContent = textUsers[i];
         }

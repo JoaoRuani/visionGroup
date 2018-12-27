@@ -95,3 +95,32 @@ dl dd{
     border-radius: 10px;
     border: 2px transparent solid;
 }
+a.item-side-menu p{
+    color:#333333;
+}
+a.item-side-menu:hover{
+    text-decoration: none; 
+}
+a.item-side-menu:hover h4{
+    color: #1a2a72;
+}
+a.item-side-menu:hover p{
+    color:#000000;
+}
+button.fa-search{
+    background: #4961CC;
+    color: #FFF;
+  
+}
+@media (min-width: 700px){
+    .perfil-image{
+        width: 120px;
+        height: 120px;
+    }
+    .nome{
+        font-size: 22px;    
+    }
+    .email{
+        font-size: 16px;
+    }
+}

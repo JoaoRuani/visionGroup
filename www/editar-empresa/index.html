@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta name="description" content="Cadastre-se e garanta o seu emprego nas melhores empresas">
+    <meta name="keywords" content="VisionGroup, Vision Group, Recrutamento, Vagas, Emprego, Empresas, Contratado, Cadastrar">
+    <meta name="author" content="Vision Group">
+
+    <link rel="stylesheet" href="../../vendor/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="../../img/favicon.png" />
+
+    <link rel="stylesheet" href="../../css/cadastro.css">
+    <link rel="stylesheet" href="../../css/editar-empresa.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+
+
+    <title>Editar perfil da empresa</title>
+</head>
+
+<body>
+    <header class="bg-full-height">
+        <nav class="navbar bg-white navbar-expand-lg shadow">
+            <a class="navbar-brand" href="../../index.html"><img src="../../img/OfficialLogo.png" class="logo"></a>
+            <button class="navbar-toggler btn-light btn" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="fas fa-bars" id="menu-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-body" id="elogin" href="">Para a empresa <span class="item-menu-icon fas fa-briefcase"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" id="clogin" href="">Para o candidato <span class="item-menu-icon fas fa-user-tie"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="#" id="CC">Cadastrar Currículo <span class="item-menu-icon fas fa-file-invoice"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="../cadastro-empresa/" id="CE">Cadastrar Empresa <span class="item-menu-icon fas fa-building"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="#">Como funciona <span class="item-menu-icon fas fa-question-circle"></span></a>
+                    </li>
+                    <span class="dropdown-divider"></span>
+                    <div class="profile-logged">
+                        <!-- d-none to disappear-->
+                        <p class="user-connected text-center d-lg-none">Conectado como:</p>
+                        <li class="nav-item profile-access-border dropdown text-center">
+                            <a class="nav-link dropdown-toggle profile-name" href="#" id="profile-options" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                            <div class="dropdown-menu profile-access-border-dropdown" aria-labelledby="profile-options">
+                                <a class="dropdown-item profile-option" href="#"></a>
+                                <a class="dropdown-item profile-option" href="#"></a>
+                                <a class="dropdown-item profile-option" href="#"></a>
+                                <a class="dropdown-item profile-option" href="#"></a>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8">
+                <form action="" method="">
+                    <h2 class="container mt-4">Perfil da empresa</h2>
+                    <section class="container input-block">
+                        <div class="row align-items-center">
+                            <div class="col-5 col-sm-4 col-lg-3">
+                                <figure class="fig-input mb-0" onclick="inputImg(event)">
+                                    <img src="../../img/logo1.png" class="img-fluid" id="fig-img" alt="Imagem de perfil">
+                                </figure>
+                                <a href="" class="fig-input-sub" onclick="inputImg(event)">Modificar Imagem</a>
+                                <input class="d-none" id="img-input" type="file" name="img" accept="image/*">
+                            </div>
+                            <div class="col-7 col-sm-8 col-lg-9 pl-0">
+                                <div class="form-group">
+                                    <label for="nome" class="mb-1">Nome da empresa</label>
+                                    <input class="form-control" type="text" id="nome" name="nome-empresa" value="Mc Donald's"
+                                        placeholder="Digite o nome">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="site" class="mt-4">Site da empresa</label>
+                            <input class="form-control" type="text" id="site" name="site-empresa" value="www.mcdonalds.com.br"
+                                placeholder="Digite o site">
+                        </div>
+                        <div class="form-group mt-4">
+                            <label for="area-resumo">Resumo da empresa</label>
+                            <textarea class="form-control" name="resumo-empresa" id="area-resumo" rows="5" placeholder="Faça um resumo da empresa"></textarea>
+                        </div>
+                        <button class="btn btn-block btn-submit" type="submit">ATUALIZAR PERFIL</button>
+
+                    </section>
+                </form>
+            </div>
+            <div class="col-12 col-lg-4 d-lg-block d-none mt-5">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>ÁREA DA EMPRESA</h3>
+                    </div>
+                    <div class="card-body">
+                        <a class="item-side-menu" href="#">
+                            <h4 class="card-title">PERFIL DA EMPRESA</h4>
+                            <p class="card-text">
+                                Conte um pouco aos candidatos sobre a empresa e como é a rotina de trabalho.
+                            </p>
+                        </a>
+                        <hr>
+                        <a class="item-side-menu" href="#">
+                            <h4 class="card-title">VAGAS ABERTAS</h4>
+                            <p class="card-text">
+                                Veja a situação das vagas.
+                            </p>
+                        </a>
+                        <hr>
+                        <a class="item-side-menu" href="#hi">
+                            <h4 class="card-title">HISTÓRICO DE VAGAS</h4>
+                            <p class="card-text">
+                                Veja detalhes das vagas que já foram fechadas.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <form method="POST" action="">
+                            <label for="busca">Pesquisar currículos</label>
+                            <div class="input-group">
+                                <input id="busca" name="busca" type="search" placeholder="Pesquisar" class="form-control"
+                                    required="required">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn fas fa-search search-button"></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../../js/navbar.js"></script>
+    <script src="../../js/editar-curriculo.js"></script>
+    <!-- SCRIPTS BOOTSTRAP E JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta name="description" content="Cadastre-se e garanta o seu emprego nas melhores empresas">
+    <meta name="keywords" content="VisionGroup, Vision Group, Recrutamento, Vagas, Emprego, Empresas, Contratado, Cadastrar">
+    <meta name="author" content="Vision Group">
+
+    <link rel="stylesheet" href="../../vendor/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="../../img/favicon.png" />
+
+    <link rel="stylesheet" href="../../css/cadastro.css">
+    <link rel="stylesheet" href="../../css/editar-curriculo.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+
+
+    <title>Adicionar vaga</title>
+</head>
+
+<body>
+    <header class="bg-full-height">
+        <nav class="navbar bg-white navbar-expand-lg shadow">
+            <a class="navbar-brand" href="../../index.html"><img src="../../img/OfficialLogo.png" class="logo"></a>
+            <button class="navbar-toggler btn-light btn" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="fas fa-bars" id="menu-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-body" id="elogin" href="">Para a empresa <span class="item-menu-icon fas fa-briefcase"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" id="clogin" href="">Para o candidato <span class="item-menu-icon fas fa-user-tie"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="#" id="CC">Cadastrar Currículo <span class="item-menu-icon fas fa-file-invoice"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="../cadastro-empresa/" id="CE">Cadastrar Empresa <span class="item-menu-icon fas fa-building"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="#">Como funciona <span class="item-menu-icon fas fa-question-circle"></span></a>
+                    </li>
+                    <span class="dropdown-divider"></span>
+                    <div class="profile-logged">
+                        <!-- d-none to disappear-->
+                        <p class="user-connected text-center d-lg-none">Conectado como:</p>
+                        <li class="nav-item profile-access-border dropdown text-center">
+                            <a class="nav-link dropdown-toggle profile-name" href="#" id="profile-options" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                            <div class="dropdown-menu profile-access-border-dropdown" aria-labelledby="profile-options">
+                                <a class="dropdown-item profile-option" href="#"></a>
+                                <a class="dropdown-item profile-option" href="#"></a>
+                                <a class="dropdown-item profile-option" href="#"></a>
+                                <a class="dropdown-item profile-option" href="#"></a>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8">
+                <form action="" method="">
+                    <h2 class="container mt-4">Adicionar vaga</h2>
+                    <p class="container">
+                        Você pode escolher os dados que irão aparecer no anúncio da vaga.<br>
+                        Vagas detalhadas possuem recomendações mais precisas!
+                    </p>
+                    <section class="container input-block">
+                        <div class="row mt-3">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="cargo" class="mb-1">Cargo</label>
+                                    <input class="form-control" type="text" id="cargo" name="cargo" placeholder="Digite o cargo">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="qtd-vagas" class="mb-1">Quantidade de vagas</label>
+                                        <input class="form-control" type="number" id="qtd-vagas" name="qtd-vagas">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="estado" class="mb-1">Estado</label>
+                                    <select class="form-control" id="estado" name="estado">
+                                        <option value="">Selecione um estado</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="cidade" class="mb-1">Cidade</label>
+                                    <select class="form-control" id="cidade" name="cidade">
+                                        <option value="">Selecione um estado primeiro</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="telefone" class="mb-1">Telefone</label>
+                                        <input class="form-control" pattern="\(\d{2}\)\d{4}-\d{4}" value="(18)9999-9999"
+                                            type="text" id="telefone" name="telefone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="celular" class="mb-1">Celular</label>
+                                        <input class="form-control" type="text" id="celular" pattern="\(\d{2}\)\d{5}-\d{4}"
+                                            name="celular" placeholder="(11) 99999-5555" value="(18)99999-9999">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="telefone" class="mb-1">E-mail</label>
+                                        <input class="form-control" placeholder="example@example.com" value="Raquel.Moura@gmail.com"
+                                            type="email" id="telefone" name="telefone" required="required">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="resumo" id="area-resumo" rows="4" value="Ola mundo"></textarea>
+                        </div>
+                        <button class="btn btn-block btn-submit" type="submit">ATUALIZAR CURRÍCULO</button>
+
+                    </section>
+                    <h2 class="container mt-4">Endereço</h2>
+                    <section class="container input-block">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="Cep" class="mb-1">Cep</label>
+                                        <input class="form-control" type="text" id="cep" name="cep" placeholder="99999-999"
+                                            value="99999999">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="estado" class="mb-1">Estado</label>
+                                    <select class="form-control" id="estado" name="estado">
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP" checked>São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="cidade" class="mb-1">Cidade</label>
+                                        <input class="form-control" type="text" id="cidade" name="cidade" placeholder="Digite a cidade"
+                                            value="Presidente Prudente">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="bairro" class="mb-1">Bairro</label>
+                                    <input class="form-control" type="text" id="bairro" name="bairro" placeholder="Digite o bairro"
+                                        value="Jardim Aviação">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="endereco" class="mb-1">Endereço</label>
+                                        <input class="form-control" type="text" id="endereco" name="endereco"
+                                            placeholder="Digite a rua" value="Rua dos garapeiros">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-block btn-submit" type="submit">ATUALIZAR CURRÍCULO</button>
+                    </section>
+                    <h2 class="container mt-4">Escolaridade</h2>
+                    <section class="container input-block">
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="nivel-esc" class="mb-1">Nível de escolaridade</label>
+                                    <select class="form-control" id="nivel-esc" name="nivel-esc">
+                                        <option value="">Selecione</option>
+                                        <option value="ensino-fundamental">Ensino fundamental</option>
+                                        <option value="ensino-fundamental-incompleto">Ensino fundamental incompleto</option>
+                                        <option value="ensino-medio">Ensino médio</option>
+                                        <option value="ensino-medio-incompleto">Ensino médio incompleto</option>
+                                        <option value="ensino-superior">Ensino superior</option>
+                                        <option value="ensino-superior-incompleto">Ensino superior incompleto</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="instituicao" class="mb-1">Nome da instituição</label>
+                                    <input class="form-control" type="text" id="instituicao" name="instituicao"
+                                        placeholder="Digite a instituição de ensino" value="Universidade federal do Paraná">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="curso" class="mb-1">Curso</label>
+                                    <input class="form-control" type="text" id="curso" name="cuso" placeholder="Digite o curso"
+                                        value="Fisioterapia">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-block btn-submit" type="submit">ATUALIZAR CURRÍCULO</button>
+                    </section>
+                    <h2 class="container mt-4">Idiomas</h2>
+                    <section class="container input-block">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="lingua">Lingua estrangeira</label>
+                                    <select class="form-control" id="lingua" name="lingua">
+                                        <option checked value="none">Selecione</option>
+                                        <option value="Africâner">Africâner</option>
+                                        <option value="Aimará">Aimará</option>
+                                        <option value="Albanês">Albanês</option>
+                                        <option value="Alemão">Alemão</option>
+                                        <option value="Árabe">Árabe</option>
+                                        <option value="Arménio">Arménio</option>
+                                        <option value="Azeri">Azeri</option>
+                                        <option value="Bielorrusso">Bielorrusso</option>
+                                        <option value="Bengali">Bengali</option>
+                                        <option value="Bislama">Bislama</option>
+                                        <option value="Bósnio">Bósnio</option>
+                                        <option value="Búlgaro">Búlgaro</option>
+                                        <option value="Cazaque">Cazaque</option>
+                                        <option value="Catalão">Catalão</option>
+                                        <option value="Checo">Checo</option>
+                                        <option value="Chinês">Chinês</option>
+                                        <option value="Coreano">Coreano</option>
+                                        <option value="Croata">Croata</option>
+                                        <option value="Curdo">Curdo</option>
+                                        <option value="Dinamarquês">Dinamarquês</option>
+                                        <option value="Dari">Dari</option>
+                                        <option value="Dhiveli">Dhiveli</option>
+                                        <option value="Dzongkha">Dzongkha</option>
+                                        <option value="Eslovaco">Eslovaco</option>
+                                        <option value="Espanhol">Espanhol</option>
+                                        <option value="Estoniano">Estoniano</option>
+                                        <option value="Fijiano">Fijiano</option>
+                                        <option value="Filipino">Filipino</option>
+                                        <option value="Finlandês">Finlandês</option>
+                                        <option value="Finês">Finês</option>
+                                        <option value="Francês">Francês</option>
+                                        <option value="Frísio">Frísio</option>
+                                        <option value="Georgiano">Georgiano</option>
+                                        <option value="Grego">Grego</option>
+                                        <option value="Guarani">Guarani</option>
+                                        <option value="Crioulo">Crioulo</option>
+                                        <option value="Haitiano">haitiano</option>
+                                        <option value="Hebreu">Hebreu</option>
+                                        <option value="hebraico">hebraico</option>
+                                        <option value="Hindi">Hindi</option>
+                                        <option value="Hiri">Hiri</option>
+                                        <option value=",otu">motu</option>
+                                        <option value="Holandês">Holandês</option>
+                                        <option value="Húngaro">Húngaro</option>
+                                        <option value="Indonésio">Indonésio</option>
+                                        <option value="Inglês">Inglês</option>
+                                        <option value="Irlandês">Irlandês</option>
+                                        <option value="Italiano">Italiano</option>
+                                        <option value="Japonês">Japonês</option>
+                                        <option value="Canará">Canará</option>
+                                        <option value="Khmer">Khmer</option>
+                                        <option value="Laociano">Laociano</option>
+                                        <option value="Latim">Latim</option>
+                                        <option value="Letão">Letão</option>
+                                        <option value="Lituano">Lituano</option>
+                                        <option value="Macedônio">Macedônio</option>
+                                        <option value="Malaio">Malaio</option>
+                                        <option value="Malaiala">Malaiala</option>
+                                        <option value="Maori">Maori</option>
+                                        <option value="Marata">Marata</option>
+                                        <option value="Moldávio">Moldávio</option>
+                                        <option value="Mongol">Mongol</option>
+                                        <option value="Ndebele">Ndebele</option>
+                                        <option value="Nepalês">Nepalês</option>
+                                        <option value="Sotho">Sotho</option>
+                                        <option value="setentrional">setentrional</option>
+                                        <option value="Norueguês">Norueguês</option>
+                                        <option value="Oriá">Oriá</option>
+                                        <option value="Pachto">Pachto</option>
+                                        <option value="Persa">Persa</option>
+                                        <option value="Polonês">Polonês</option>
+                                        <option value="Polaco">Polaco</option>
+                                        <option value="Português">Português</option>
+                                        <option value="Punjabi">Punjabi</option>
+                                        <option value="Quíchua">Quíchua</option>
+                                        <option value="Quirguiz">Quirguiz</option>
+                                        <option value="Romeno">Romeno</option>
+                                        <option value="Romanche">Romanche</option>
+                                        <option value="Russo">Russo</option>
+                                        <option value="Sérvio">Sérvio</option>
+                                        <option value="Cingalêsa">Cingalêsa</option>
+                                        <option value="Somali">Somali</option>
+                                        <option value="Soto">Soto</option>
+                                        <option value="Suaíli">Suaíli</option>
+                                        <option value="Suázi">Suázi</option>
+                                        <option value="Sueco">Sueco</option>
+                                        <option value="Tajique">Tajique</option>
+                                        <option value="Tâmil">Tâmil</option>
+                                        <option value="Tétum">Tétum</option>
+                                        <option value="Tai">Tai</option>
+                                        <option value="Tok">Tok</option>
+                                        <option value="Pisin">Pisin</option>
+                                        <option value="Tsonga">Tsonga</option>
+                                        <option value="Tswana">Tswana</option>
+                                        <option value="Turco">Turco</option>
+                                        <option value="Turcomeno">Turcomeno</option>
+                                        <option value="Ucraniano">Ucraniano</option>
+                                        <option value="Uzbeque">Uzbeque</option>
+                                        <option value="Venda">Venda</option>
+                                        <option value="Vietnamita">Vietnamita</option>
+                                        <option value="Xhosa">Xhosa</option>
+                                        <option value="Zulu">Zulu</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group pt-0">
+                                    <label for="nivel">Nível</label>
+                                    <input type="range" class="custom-range" min="1" max="3" id="nivel" name="nivelIdioma"
+                                        value="1">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-block btn-submit" type="submit">ATUALIZAR CURRÍCULO</button>
+                    </section>
+                    <h2 class="container mt-4">Cursos e conhecimentos complementares</h2>
+                    <section class="container input-block">
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="nome-inst-ccc" class="mb-1">Nome da instituição</label>
+                                    <input class="form-control" type="text" id="nome-ccc" name="nome-ccc" placeholder="Digite a instituição">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="nome-curso-ccc" class="mb-1">Curso ou conhecimento</label>
+                                    <input class="form-control" type="text" id="nome-curso-ccc" name="nome-curso-ccc"
+                                        placeholder="Digite o cursos ou conhecimento">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="duracao-ccc" class="mb-1">Curso ou conhecimento</label>
+                                    <input class="form-control" type="text" id="duracao-ccc" name="duracao-ccc"
+                                        placeholder="Digite a duração">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-block btn-submit" type="submit">ATUALIZAR CURRÍCULO</button>
+                    </section>
+                    <h2 class="container mt-4">Deficiência</h2>
+                    <section class="container input-block">
+                        <div class="row align-items-center">
+                            <legend class="container">Possui deficiência</legend>
+                            <div class="col-6">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="defSim" name="deficient" class="custom-control-input">
+                                    <label class="custom-control-label" for="defSim">Sim</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="defNao" name="deficient" class="custom-control-input">
+                                    <label class="custom-control-label" for="defNao">Não</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center mt-3">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="typedef">Tipo de deficiencia</label>
+                                    <select class="form-control" id="typedef" name="typedef">
+                                        <option value="">Selecione</option>
+                                        <option value="auditiva">Auditiva</option>
+                                        <option value="fisica">Física</option>
+                                        <option value="visual">Visual</option>
+                                        <option value="intelectual">Intelectual</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-block btn-submit" type="submit">ATUALIZAR CURRÍCULO</button>
+                    </section>
+                    <h2 class="container mt-4">Experiência</h2>
+                    <section class="container input-block">
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="nome-empresa-exp">Nome da empresa</label>
+                                    <input class="form-control" type="text" id="nome-empresa-exp" name="nome-empresa-exp"
+                                        placeholder="Digite a empresa">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="nome-empresa-exp">Ramo de atividade</label>
+                                    <input class="form-control" type="text" id="ramo-exp" name="ramo-exp" placeholder="Digite o ramo de atividade">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="cargo-exp">Cargo</label>
+                                    <input class="form-control" type="text" id="cargo-exp" name="cargo-exp" placeholder="Digite o cargo de atuação">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="data-adm-exp">Data de admissão</label>
+                                    <input class="form-control" type="date" id="data-adm-exp" name="data-adm-exp">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="data-sai-exp">Data de saída</label>
+                                    <input class="form-control" type="date" id="data-sai-exp" name="data-sai-exp">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-block btn-submit" type="submit">ATUALIZAR CURRÍCULO</button>
+                    </section>
+                    <h2 class="container mt-4">Objetivos</h2>
+                    <section class="container input-block">
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <label for="cargo-1">Cargo 1</label>
+                                <input class="form-control" type="text" id="cargo-1" name="cargo-1" placeholder="Digite o cargo">
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <label for="cargo-2">Cargo 2</label>
+                                <input class="form-control" type="text" id="cargo-2" name="cargo-2" placeholder="Digite o cargo">
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <label for="cargo-3">Cargo 3</label>
+                                <input class="form-control" type="text" id="cargo-3" name="cargo-3" placeholder="Digite o cargo">
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="ptr-salarial">Pretensão salarial</label>
+                                    <input class="form-control" type="text" id="ptr-salarial" name="ptr-salarial"
+                                        placeholder="Digite o salário">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-block btn-submit" type="submit">ATUALIZAR CURRÍCULO</button>
+                    </section>
+                    <h2 class="container mt-4">Informações complementares</h2>
+                    <section class="container input-block">
+                        <div class="row align-items-center">
+                            <legend class="container mb-3">Categoria da habilitação</legend>
+                            <div class="col-6">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="tipo-hab1" id="tipo-hab1"
+                                        value="a">
+                                    <label class="custom-control-label" for="tipo-hab1">A</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="tipo-hab2" name="tipo-hab2"
+                                        value="b">
+                                    <label class="custom-control-label" for="tipo-hab2">B</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center mt-3">
+                            <div class="col-6">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="tipo-hab3" id="tipo-hab3"
+                                        value="c">
+                                    <label class="custom-control-label" for="tipo-hab3">C</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="tipo-hab4" id="tipo-hab4"
+                                        value="d">
+                                    <label class="custom-control-label" for="tipo-hab4">D</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center mt-3">
+                            <div class="col-6">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="tipo-hab5" id="tipo-hab5"
+                                        value="e">
+                                    <label class="custom-control-label" for="tipo-hab5">E</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center my-3">
+                            <legend class="container">Aceita viajar pela empresa</legend>
+                            <div class="col-6">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="viajSim" name="viajar" class="custom-control-input">
+                                    <label class="custom-control-label" for="viajSim">Sim</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="viajNao" name="viajar" class="custom-control-input">
+                                    <label class="custom-control-label" for="viajNao">Não</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="adicionais">Informações adicionais</label>
+                                    <textarea class="form-control" name="info-adc" id="adicionais" rows="4"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-block btn-submit" type="submit">ATUALIZAR CURRÍCULO</button>
+                    </section>
+                </form>
+            </div>
+            <div class="col-12 col-lg-4 d-lg-block d-none mt-5">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>ÁREA DO USUÁRIO</h3>
+                    </div>
+                    <div class="card-body">
+                        <a class="item-side-menu" href="#">
+                            <h4 class="card-title">EDITAR CURRÍCULO</h4>
+                            <p class="card-text">Um currículo completo possui
+                                mais chances de ser recomendado
+                                às empresas.</p>
+                        </a>
+                        <hr>
+                        <a class="item-side-menu" href="#">
+                            <h4 class="card-title">HISTÓRICO DE CANDIDATURAS</h4>
+                            <p class="card-text">Veja como estão as vagas que você
+                                se candidatou.</p>
+                        </a>
+                        <hr>
+                        <a class="item-side-menu" href="#">
+                            <h4 class="card-title">VAGAS RECOMENDADAS</h4>
+                            <p class="card-text">Veja quais vagas se encaixam com
+                                o seu perfil.</p>
+                        </a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <form>
+                            <label for="busca" class="common">Pesquisar vagas</label>
+                            <div class="input-group">
+                                <input id="busca" name="busca" type="search" placeholder="Pesquisar" class="form-control"
+                                    required="required">
+                                <div class="input-group-append">
+                                    <button type="submit" class=" btn fas fa-search search-button"></button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../../js/navbar.js"></script>
+    <!-- SCRIPTS BOOTSTRAP E JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script>
+        var estado = document.getElementById('estado');
+        xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://servicodados.ibge.gov.br/api/v1/localidades/estados");
+        xhr.send();
+        xhr.addEventListener("load", function () {
+            estados = JSON.parse(xhr.responseText);
+            estados.forEach(function (uf) {
+                op = document.createElement('option');
+                op.setAttribute('value', uf.sigla);
+                op.setAttribute('id', uf.id);
+                op.textContent = uf.nome;
+                estado.appendChild(op);
+            })
+
+        });
+        estado.addEventListener('change', function () {
+            
+            if (this.value) {
+                let cidade = document.getElementById('cidade');
+                xhr = new XMLHttpRequest();
+                xhr.open("GET", "https://servicodados.ibge.gov.br/api/v1/localidades/estados/" + this.id + "/municipios");
+                xhr.send();
+                xhr.addEventListener("load", function () {
+                    cidades = JSON.parse(xhr.responseText);
+                    cidades.forEach(function (ci) {
+                        op = document.createElement('option');
+                        op.setAttribute('value', ci.none);
+                        op.textContent = uf.nome;
+                        cidade.appendChild(op);
+                    })
+
+                });
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -8,6 +8,7 @@ figure.fig-input img{
     height: 120px;
     width: 120px;
     cursor: pointer;
+    object-fit: scale-down;
 }
 
 .fig-input-sub{

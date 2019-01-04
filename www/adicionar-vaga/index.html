@@ -72,29 +72,31 @@
         <div class="row">
             <div class="col-md-10 col-lg-8">
                 <form action="" method="">
-                    <h2 class="container mt-4">Adicionar vaga</h2>
-                    <p class="container">
-                        Você pode escolher os dados que irão aparecer no anúncio da vaga.<br>
+                    <h2 class="mt-4">Adicionar vaga</h2>
+                    <p>
                         Vagas detalhadas possuem recomendações mais precisas!
                     </p>
                     <section class="container input-block">
-                        <div class="row mt-3">
-                            <div class="col-6">
+                        <div class="row">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <label for="cargo" class="mb-1">Cargo</label>
                                     <input class="form-control" type="text" id="cargo" name="cargo" placeholder="Digite o cargo">
                                 </div>
                             </div>
-                            <div class="col-6">
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <div class="form-group">
                                         <label for="qtd-vagas" class="mb-1">Quantidade de vagas</label>
-                                        <input class="form-control" type="number" id="qtd-vagas" name="qtd-vagas">
+                                        <input class="form-control" type="number" id="qtd-vagas" name="qtd-vagas"
+                                            placeholder="Digite a quantidade de vagas">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row mt-3">
+                        <div class="row">
                             <div class="col-6">
                                 <div class="form-group">
                                     <label for="estado" class="mb-1">Estado</label>
@@ -112,165 +114,80 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row mt-3">
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <div class="form-group">
-                                        <label for="telefone" class="mb-1">Telefone</label>
-                                        <input class="form-control" pattern="\(\d{2}\)\d{4}-\d{4}" value="(18)9999-9999"
-                                            type="text" id="telefone" name="telefone">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <div class="form-group">
-                                        <label for="celular" class="mb-1">Celular</label>
-                                        <input class="form-control" type="text" id="celular" pattern="\(\d{2}\)\d{5}-\d{4}"
-                                            name="celular" placeholder="(11) 99999-5555" value="(18)99999-9999">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <div class="form-group">
-                                        <label for="telefone" class="mb-1">E-mail</label>
-                                        <input class="form-control" placeholder="example@example.com" value="Raquel.Moura@gmail.com"
-                                            type="email" id="telefone" name="telefone" required="required">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" name="resumo" id="area-resumo" rows="4" value="Ola mundo"></textarea>
-                        </div>
-                        <button class="btn btn-block btn-submit" type="submit">ATUALIZAR CURRÍCULO</button>
-
-                    </section>
-                    <h2 class="container mt-4">Endereço</h2>
-                    <section class="container input-block">
-                        <div class="row align-items-center">
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <div class="form-group">
-                                        <label for="Cep" class="mb-1">Cep</label>
-                                        <input class="form-control" type="text" id="cep" name="cep" placeholder="99999-999"
-                                            value="99999999">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <label for="estado" class="mb-1">Estado</label>
-                                    <select class="form-control" id="estado" name="estado">
-                                        <option value="AC">Acre</option>
-                                        <option value="AL">Alagoas</option>
-                                        <option value="AP">Amapá</option>
-                                        <option value="AM">Amazonas</option>
-                                        <option value="BA">Bahia</option>
-                                        <option value="CE">Ceará</option>
-                                        <option value="DF">Distrito Federal</option>
-                                        <option value="ES">Espírito Santo</option>
-                                        <option value="GO">Goiás</option>
-                                        <option value="MA">Maranhão</option>
-                                        <option value="MT">Mato Grosso</option>
-                                        <option value="MS">Mato Grosso do Sul</option>
-                                        <option value="MG">Minas Gerais</option>
-                                        <option value="PA">Pará</option>
-                                        <option value="PB">Paraíba</option>
-                                        <option value="PR">Paraná</option>
-                                        <option value="PE">Pernambuco</option>
-                                        <option value="PI">Piauí</option>
-                                        <option value="RJ">Rio de Janeiro</option>
-                                        <option value="RN">Rio Grande do Norte</option>
-                                        <option value="RS">Rio Grande do Sul</option>
-                                        <option value="RO">Rondônia</option>
-                                        <option value="RR">Roraima</option>
-                                        <option value="SC">Santa Catarina</option>
-                                        <option value="SP" checked>São Paulo</option>
-                                        <option value="SE">Sergipe</option>
-                                        <option value="TO">Tocantins</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <div class="form-group">
-                                        <label for="cidade" class="mb-1">Cidade</label>
-                                        <input class="form-control" type="text" id="cidade" name="cidade" placeholder="Digite a cidade"
-                                            value="Presidente Prudente">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <label for="bairro" class="mb-1">Bairro</label>
-                                    <input class="form-control" type="text" id="bairro" name="bairro" placeholder="Digite o bairro"
-                                        value="Jardim Aviação">
-                                </div>
-                            </div>
-                        </div>
                         <div class="row align-items-center">
                             <div class="col-12">
                                 <div class="form-group">
+                                    <label for="des-vaga">Descrição da vaga</label>
+                                    <textarea class="form-control" name="des-vaga" id="des-vaga" rows="4" placeholder="Faça uma descrição para a vaga"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
                                     <div class="form-group">
-                                        <label for="endereco" class="mb-1">Endereço</label>
-                                        <input class="form-control" type="text" id="endereco" name="endereco"
-                                            placeholder="Digite a rua" value="Rua dos garapeiros">
+                                        <label for="qtd-vagas" class="mb-1">Salário</label>
+                                        <input class="form-control" type="number" id="qtd-vagas" name="qtd-vagas"
+                                            placeholder="Digite o salário">
+                                        <small>Caso o salário seja a combinar não preencha!</small>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-block btn-submit" type="submit">ATUALIZAR CURRÍCULO</button>
                     </section>
-                    <h2 class="container mt-4">Escolaridade</h2>
+                    <h2 class="mt-4 mb-3">Requisitos</h2>
                     <section class="container input-block">
                         <div class="row align-items-center">
                             <div class="col-12">
                                 <div class="form-group">
-                                    <label for="nivel-esc" class="mb-1">Nível de escolaridade</label>
-                                    <select class="form-control" id="nivel-esc" name="nivel-esc">
-                                        <option value="">Selecione</option>
-                                        <option value="ensino-fundamental">Ensino fundamental</option>
-                                        <option value="ensino-fundamental-incompleto">Ensino fundamental incompleto</option>
-                                        <option value="ensino-medio">Ensino médio</option>
-                                        <option value="ensino-medio-incompleto">Ensino médio incompleto</option>
-                                        <option value="ensino-superior">Ensino superior</option>
-                                        <option value="ensino-superior-incompleto">Ensino superior incompleto</option>
-                                    </select>
+                                    <div class="form-group">
+                                        <label for="esc-min" class="mb-1">Escolaridade Mínima</label>
+                                        <select class="form-control" id="esc-min" name="esc-min">
+                                            <option value="">Selecione</option>
+                                            <option value="ensino-fundamental">Ensino fundamental</option>
+                                            <option value="ensino-fundamental-incompleto">Ensino fundamental incompleto</option>
+                                            <option value="ensino-medio">Ensino médio</option>
+                                            <option value="ensino-medio-incompleto">Ensino médio incompleto</option>
+                                            <option value="ensino-superior">Ensino superior</option>
+                                            <option value="ensino-superior-incompleto">Ensino superior incompleto</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row align-items-center">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label for="instituicao" class="mb-1">Nome da instituição</label>
-                                    <input class="form-control" type="text" id="instituicao" name="instituicao"
-                                        placeholder="Digite a instituição de ensino" value="Universidade federal do Paraná">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center">
+                        <div class="row align-items-center d-none" id="cursos">
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="curso" class="mb-1">Curso</label>
-                                    <input class="form-control" type="text" id="curso" name="cuso" placeholder="Digite o curso"
-                                        value="Fisioterapia">
+                                    <input class="form-control" type="text" id="curso" name="curso" placeholder="Digite o curso">
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-block btn-submit" type="submit">ATUALIZAR CURRÍCULO</button>
-                    </section>
-                    <h2 class="container mt-4">Idiomas</h2>
-                    <section class="container input-block">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-12">
                                 <div class="form-group">
-                                    <label for="lingua">Lingua estrangeira</label>
+                                    <label for="exp" class="mb-1">Experiência</label>
+                                    <textarea class="form-control" name="exp" id="exp" rows="4" placeholder="Expreriência do candidato"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <p class="container mb-2 lead">Idade do candidato</p>
+                            <div class="col-6">
+                                <label for="idade-inicial" class="mb-1">Idade inicial</label>
+                                <input class="form-control" type="number" id="idade-inicial" name="idade-inicial"
+                                    placeholder="Idade inicial">
+                            </div>
+                            <div class="col-6">
+                                <label for="idade-final" class="mb-1">Idade final</label>
+                                <input class="form-control" type="number" id="idade-final" name="idade-final"
+                                    placeholder="Idade final">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="lingua">Idioma</label>
                                     <select class="form-control" id="lingua" name="lingua">
                                         <option checked value="none">Selecione</option>
                                         <option value="Africâner">Africâner</option>
@@ -378,159 +295,39 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="form-group pt-0">
-                                    <label for="nivel">Nível</label>
-                                    <input type="range" class="custom-range" min="1" max="3" id="nivel" name="nivelIdioma"
-                                        value="1">
-                                </div>
-                            </div>
                         </div>
-                        <button class="btn btn-block btn-submit" type="submit">ATUALIZAR CURRÍCULO</button>
-                    </section>
-                    <h2 class="container mt-4">Cursos e conhecimentos complementares</h2>
-                    <section class="container input-block">
-                        <div class="row align-items-center">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label for="nome-inst-ccc" class="mb-1">Nome da instituição</label>
-                                    <input class="form-control" type="text" id="nome-ccc" name="nome-ccc" placeholder="Digite a instituição">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label for="nome-curso-ccc" class="mb-1">Curso ou conhecimento</label>
-                                    <input class="form-control" type="text" id="nome-curso-ccc" name="nome-curso-ccc"
-                                        placeholder="Digite o cursos ou conhecimento">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label for="duracao-ccc" class="mb-1">Curso ou conhecimento</label>
-                                    <input class="form-control" type="text" id="duracao-ccc" name="duracao-ccc"
-                                        placeholder="Digite a duração">
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btn btn-block btn-submit" type="submit">ATUALIZAR CURRÍCULO</button>
-                    </section>
-                    <h2 class="container mt-4">Deficiência</h2>
-                    <section class="container input-block">
-                        <div class="row align-items-center">
-                            <legend class="container">Possui deficiência</legend>
+                        <div class="row align-items-center my-3">
+                            <legend class="container mb-2">Disponibilidade de viajar pela empresa</legend>
                             <div class="col-6">
                                 <div class="custom-control custom-radio">
-                                    <input type="radio" id="defSim" name="deficient" class="custom-control-input">
-                                    <label class="custom-control-label" for="defSim">Sim</label>
+                                    <input type="radio" id="viajSim" name="viajar" class="custom-control-input" value="sim">
+                                    <label class="custom-control-label" for="viajSim">Sim</label>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="defNao" name="deficient" class="custom-control-input">
-                                    <label class="custom-control-label" for="defNao">Não</label>
+                                    <input type="radio" id="viajNao" name="viajar" class="custom-control-input" value="nao">
+                                    <label class="custom-control-label" for="viajNao">Não</label>
                                 </div>
                             </div>
                         </div>
-                        <div class="row align-items-center mt-3">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label for="typedef">Tipo de deficiencia</label>
-                                    <select class="form-control" id="typedef" name="typedef">
-                                        <option value="">Selecione</option>
-                                        <option value="auditiva">Auditiva</option>
-                                        <option value="fisica">Física</option>
-                                        <option value="visual">Visual</option>
-                                        <option value="intelectual">Intelectual</option>
-                                    </select>
+                        <div class="row align-items-center my-3">
+                            <legend class="container mb-2">Disponibilidade de morar em outra cidade</legend>
+                            <div class="col-6">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="morarSim" name="morar" class="custom-control-input" value="sim">
+                                    <label class="custom-control-label" for="morarSim">Sim</label>
                                 </div>
                             </div>
-                        </div>
-                        <button class="btn btn-block btn-submit" type="submit">ATUALIZAR CURRÍCULO</button>
-                    </section>
-                    <h2 class="container mt-4">Experiência</h2>
-                    <section class="container input-block">
-                        <div class="row align-items-center">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label for="nome-empresa-exp">Nome da empresa</label>
-                                    <input class="form-control" type="text" id="nome-empresa-exp" name="nome-empresa-exp"
-                                        placeholder="Digite a empresa">
+                            <div class="col-6">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="morarNao" name="morar" class="custom-control-input" value="nao">
+                                    <label class="custom-control-label" for="morarNao">Não</label>
                                 </div>
                             </div>
                         </div>
                         <div class="row align-items-center">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label for="nome-empresa-exp">Ramo de atividade</label>
-                                    <input class="form-control" type="text" id="ramo-exp" name="ramo-exp" placeholder="Digite o ramo de atividade">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label for="cargo-exp">Cargo</label>
-                                    <input class="form-control" type="text" id="cargo-exp" name="cargo-exp" placeholder="Digite o cargo de atuação">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label for="data-adm-exp">Data de admissão</label>
-                                    <input class="form-control" type="date" id="data-adm-exp" name="data-adm-exp">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label for="data-sai-exp">Data de saída</label>
-                                    <input class="form-control" type="date" id="data-sai-exp" name="data-sai-exp">
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btn btn-block btn-submit" type="submit">ATUALIZAR CURRÍCULO</button>
-                    </section>
-                    <h2 class="container mt-4">Objetivos</h2>
-                    <section class="container input-block">
-                        <div class="row align-items-center">
-                            <div class="col-12">
-                                <label for="cargo-1">Cargo 1</label>
-                                <input class="form-control" type="text" id="cargo-1" name="cargo-1" placeholder="Digite o cargo">
-                            </div>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-12">
-                                <label for="cargo-2">Cargo 2</label>
-                                <input class="form-control" type="text" id="cargo-2" name="cargo-2" placeholder="Digite o cargo">
-                            </div>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-12">
-                                <label for="cargo-3">Cargo 3</label>
-                                <input class="form-control" type="text" id="cargo-3" name="cargo-3" placeholder="Digite o cargo">
-                            </div>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label for="ptr-salarial">Pretensão salarial</label>
-                                    <input class="form-control" type="text" id="ptr-salarial" name="ptr-salarial"
-                                        placeholder="Digite o salário">
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btn btn-block btn-submit" type="submit">ATUALIZAR CURRÍCULO</button>
-                    </section>
-                    <h2 class="container mt-4">Informações complementares</h2>
-                    <section class="container input-block">
-                        <div class="row align-items-center">
-                            <legend class="container mb-3">Categoria da habilitação</legend>
+                            <legend class="container mb-3">Habilitação</legend>
                             <div class="col-6">
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" name="tipo-hab1" id="tipo-hab1"
@@ -572,67 +369,298 @@
                             </div>
                         </div>
                         <div class="row align-items-center my-3">
-                            <legend class="container">Aceita viajar pela empresa</legend>
+                            <legend class="container mb-2">Gênero</legend>
                             <div class="col-6">
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" id="viajSim" name="viajar" class="custom-control-input">
-                                    <label class="custom-control-label" for="viajSim">Sim</label>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" id="masculino" name="masc" class="custom-control-input"
+                                        value="masculino">
+                                    <label class="custom-control-label" for="masculino">Masculino</label>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="viajNao" name="viajar" class="custom-control-input">
-                                    <label class="custom-control-label" for="viajNao">Não</label>
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" id="feminino" name="fem" class="custom-control-input" value="feminino">
+                                    <label class="custom-control-label" for="feminino">Feminino</label>
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="estado-civil" class="mb-1">Estado Civil</label>
+                                    <select class="form-control" id="estado-civil" name="est-civil">
+                                        <option value="">Selecione</option>
+                                        <option value="solteiro">Solteiro(a)</option>
+                                        <option value="casado">Casado(a)</option>
+                                        <option value="divorciado">Divorciado(a)</option>
+                                        <option value="viuvo">Viúvo(a)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="nacionalidade" class="mb-1">Nacionalidade</label>
+                                    <select class="form-control" id="nacionalidade" name="nacionalidade">
+                                        <option value="">Selecione</option>
+                                        <option value="África do Sul">África do Sul</option>
+                                        <option value="Albânia">Albânia</option>
+                                        <option value="Alemanha">Alemanha</option>
+                                        <option value="Andorra">Andorra</option>
+                                        <option value="Angola">Angola</option>
+                                        <option value="Anguilla">Anguilla</option>
+                                        <option value="Antigua">Antigua</option>
+                                        <option value="Arábia Saudita">Arábia Saudita</option>
+                                        <option value="Argentina">Argentina</option>
+                                        <option value="Armênia">Armênia</option>
+                                        <option value="Aruba">Aruba</option>
+                                        <option value="Austrália">Austrália</option>
+                                        <option value="Áustria">Áustria</option>
+                                        <option value="Azerbaijão">Azerbaijão</option>
+                                        <option value="Bahamas">Bahamas</option>
+                                        <option value="Bahrein">Bahrein</option>
+                                        <option value="Bangladesh">Bangladesh</option>
+                                        <option value="Barbados">Barbados</option>
+                                        <option value="Bélgica">Bélgica</option>
+                                        <option value="Benin">Benin</option>
+                                        <option value="Bermudas">Bermudas</option>
+                                        <option value="Botsuana">Botsuana</option>
+                                        <option value="Brasil">Brasil</option>
+                                        <option value="Brunei">Brunei</option>
+                                        <option value="Bulgária">Bulgária</option>
+                                        <option value="Burkina Fasso">Burkina Fasso</option>
+                                        <option value="botão">botão</option>
+                                        <option value="Cabo Verde">Cabo Verde</option>
+                                        <option value="Camarões">Camarões</option>
+                                        <option value="Camboja">Camboja</option>
+                                        <option value="Canadá">Canadá</option>
+                                        <option value="Cazaquistão">Cazaquistão</option>
+                                        <option value="Chade">Chade</option>
+                                        <option value="Chile">Chile</option>
+                                        <option value="China">China</option>
+                                        <option value="Cidade do Vaticano">Cidade do Vaticano</option>
+                                        <option value="Colômbia">Colômbia</option>
+                                        <option value="Congo">Congo</option>
+                                        <option value="Coréia do Sul">Coréia do Sul</option>
+                                        <option value="Costa do Marfim">Costa do Marfim</option>
+                                        <option value="Costa Rica">Costa Rica</option>
+                                        <option value="Croácia">Croácia</option>
+                                        <option value="Dinamarca">Dinamarca</option>
+                                        <option value="Djibuti">Djibuti</option>
+                                        <option value="Dominica">Dominica</option>
+                                        <option value="EUA">EUA</option>
+                                        <option value="Egito">Egito</option>
+                                        <option value="El Salvador">El Salvador</option>
+                                        <option value="Emirados Árabes">Emirados Árabes</option>
+                                        <option value="Equador">Equador</option>
+                                        <option value="Eritréia">Eritréia</option>
+                                        <option value="Escócia">Escócia</option>
+                                        <option value="Eslováquia">Eslováquia</option>
+                                        <option value="Eslovênia">Eslovênia</option>
+                                        <option value="Espanha">Espanha</option>
+                                        <option value="Estônia">Estônia</option>
+                                        <option value="Etiópia">Etiópia</option>
+                                        <option value="Fiji">Fiji</option>
+                                        <option value="Filipinas">Filipinas</option>
+                                        <option value="Finlândia">Finlândia</option>
+                                        <option value="França">França</option>
+                                        <option value="Gabão">Gabão</option>
+                                        <option value="Gâmbia">Gâmbia</option>
+                                        <option value="Gana">Gana</option>
+                                        <option value="Geórgia">Geórgia</option>
+                                        <option value="Gibraltar">Gibraltar</option>
+                                        <option value="Granada">Granada</option>
+                                        <option value="Grécia">Grécia</option>
+                                        <option value="Guadalupe">Guadalupe</option>
+                                        <option value="Guam">Guam</option>
+                                        <option value="Guatemala">Guatemala</option>
+                                        <option value="Guiana">Guiana</option>
+                                        <option value="Guiana Francesa">Guiana Francesa</option>
+                                        <option value="Guiné-bissau">Guiné-bissau</option>
+                                        <option value="Haiti">Haiti</option>
+                                        <option value="Holanda">Holanda</option>
+                                        <option value="Honduras">Honduras</option>
+                                        <option value="Hong Kong">Hong Kong</option>
+                                        <option value="Hungria">Hungria</option>
+                                        <option value="Iêmen">Iêmen</option>
+                                        <option value="Ilhas Cayman">Ilhas Cayman</option>
+                                        <option value="Ilhas Cook">Ilhas Cook</option>
+                                        <option value="Ilhas Curaçao">Ilhas Curaçao</option>
+                                        <option value="Ilhas Marshall">Ilhas Marshall</option>
+                                        <option value="Ilhas Turks & Caicos">Ilhas Turks & Caicos</option>
+                                        <option value="Ilhas Virgens (brit.)">Ilhas Virgens (brit.)</option>
+                                        <option value="Ilhas Virgens(amer.)">Ilhas Virgens(amer.)</option>
+                                        <option value="Ilhas Wallis e Futuna">Ilhas Wallis e Futuna</option>
+                                        <option value="Índia">Índia</option>
+                                        <option value="Indonésia">Indonésia</option>
+                                        <option value="Inglaterra">Inglaterra</option>
+                                        <option value="Irlanda">Irlanda</option>
+                                        <option value="Islândia">Islândia</option>
+                                        <option value="Israel">Israel</option>
+                                        <option value="Itália">Itália</option>
+                                        <option value="Jamaica">Jamaica</option>
+                                        <option value="Japão">Japão</option>
+                                        <option value="Jordânia">Jordânia</option>
+                                        <option value="Kuwait">Kuwait</option>
+                                        <option value="Latvia">Latvia</option>
+                                        <option value="Líbano">Líbano</option>
+                                        <option value="Liechtenstein">Liechtenstein</option>
+                                        <option value="Lituânia">Lituânia</option>
+                                        <option value="Luxemburgo">Luxemburgo</option>
+                                        <option value="Macau">Macau</option>
+                                        <option value="Macedônia">Macedônia</option>
+                                        <option value="Madagascar">Madagascar</option>
+                                        <option value="Malásia">Malásia</option>
+                                        <option value="Malaui">Malaui</option>
+                                        <option value="Mali">Mali</option>
+                                        <option value="Malta">Malta</option>
+                                        <option value="Marrocos">Marrocos</option>
+                                        <option value="Martinica">Martinica</option>
+                                        <option value="Mauritânia">Mauritânia</option>
+                                        <option value="Mauritius">Mauritius</option>
+                                        <option value="México">México</option>
+                                        <option value="Moldova">Moldova</option>
+                                        <option value="Mônaco">Mônaco</option>
+                                        <option value="Montserrat">Montserrat</option>
+                                        <option value="Nepal">Nepal</option>
+                                        <option value="Nicarágua">Nicarágua</option>
+                                        <option value="Niger">Niger</option>
+                                        <option value="Nigéria">Nigéria</option>
+                                        <option value="Noruega">Noruega</option>
+                                        <option value="Nova Caledônia">Nova Caledônia</option>
+                                        <option value="Nova Zelândia">Nova Zelândia</option>
+                                        <option value="Omã">Omã</option>
+                                        <option value="Palau">Palau</option>
+                                        <option value="Panamá">Panamá</option>
+                                        <option value="Papua-nova Guiné">Papua-nova Guiné</option>
+                                        <option value="Paquistão">Paquistão</option>
+                                        <option value="Peru">Peru</option>
+                                        <option value="Polinésia Francesa">Polinésia Francesa</option>
+                                        <option value="Polônia">Polônia</option>
+                                        <option value="Porto Rico">Porto Rico</option>
+                                        <option value="Portugal">Portugal</option>
+                                        <option value="Qatar">Qatar</option>
+                                        <option value="Quênia">Quênia</option>
+                                        <option value="Rep. Dominicana">Rep. Dominicana</option>
+                                        <option value="Rep. Tcheca">Rep. Tcheca</option>
+                                        <option value="Reunion">Reunion</option>
+                                        <option value="Romênia">Romênia</option>
+                                        <option value="Ruanda">Ruanda</option>
+                                        <option value="Rússia">Rússia</option>
+                                        <option value="Saipan">Saipan</option>
+                                        <option value="Samoa Americana">Samoa Americana</option>
+                                        <option value="Senegal">Senegal</option>
+                                        <option value="Serra Leone">Serra Leone</option>
+                                        <option value="Seychelles">Seychelles</option>
+                                        <option value="Singapura">Singapura</option>
+                                        <option value="Síria">Síria</option>
+                                        <option value="Sri Lanka">Sri Lanka</option>
+                                        <option value="St. Kitts & Nevis">St. Kitts & Nevis</option>
+                                        <option value="St. Lúcia">St. Lúcia</option>
+                                        <option value="St. Vincent">St. Vincent</option>
+                                        <option value="Sudão">Sudão</option>
+                                        <option value="Suécia">Suécia</option>
+                                        <option value="Suiça">Suiça</option>
+                                        <option value="Suriname">Suriname</option>
+                                        <option value="Tailândia">Tailândia</option>
+                                        <option value="Taiwan">Taiwan</option>
+                                        <option value="Tanzânia">Tanzânia</option>
+                                        <option value="Togo">Togo</option>
+                                        <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                                        <option value="Tunísia">Tunísia</option>
+                                        <option value="Turquia">Turquia</option>
+                                        <option value="Ucrânia">Ucrânia</option>
+                                        <option value="Uganda">Uganda</option>
+                                        <option value="Uruguai">Uruguai</option>
+                                        <option value="Venezuela">Venezuela</option>
+                                        <option value="Vietnã">Vietnã</option>
+                                        <option value="Zaire">Zaire</option>
+                                        <option value="Zâmbia">Zâmbia</option>
+                                        <option value="Zimbábue">Zimbábue</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <h2 class="mt-4">Desejáveis</h2>
+                    <section class="container input-block">
                         <div class="row align-items-center">
                             <div class="col-12">
                                 <div class="form-group">
-                                    <label for="adicionais">Informações adicionais</label>
-                                    <textarea class="form-control" name="info-adc" id="adicionais" rows="4"></textarea>
+                                    <label for="desejaveis">Desejável do candidato</label>
+                                    <textarea class="form-control" name="desejaveis" id="desejaveis" rows="4"
+                                        placeholder="Desejáveis do candidato"></textarea>
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-block btn-submit" type="submit">ATUALIZAR CURRÍCULO</button>
                     </section>
+                    <h2 class="mt-4">Benefícios</h2>
+                    <section class="container input-block">
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="beneficios">Benefícios para o funcionário</label>
+                                    <textarea class="form-control" name="beneficios" id="beneficios" rows="4"
+                                        placeholder="Benefícios para o funcionário"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <h2 class="mt-4">Observações</h2>
+                    <section class="container input-block">
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="observacoes">Observações</label>
+                                    <textarea class="form-control" name="observacoes" id="observacoes" rows="4"
+                                        placeholder="Observações"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <button class="btn btn-block btn-submit my-2" type="submit">ADICIONAR VAGA</button>
                 </form>
             </div>
             <div class="col-12 col-lg-4 d-lg-block d-none mt-5">
                 <div class="card">
                     <div class="card-header">
-                        <h3>ÁREA DO USUÁRIO</h3>
+                        <h3>ÁREA DA EMPRESA</h3>
                     </div>
                     <div class="card-body">
                         <a class="item-side-menu" href="#">
-                            <h4 class="card-title">EDITAR CURRÍCULO</h4>
-                            <p class="card-text">Um currículo completo possui
-                                mais chances de ser recomendado
-                                às empresas.</p>
+                            <h4 class="card-title">PERFIL DA EMPRESA</h4>
+                            <p class="card-text">
+                                Conte um pouco aos candidatos sobre a empresa e como é a rotina de trabalho.
+                            </p>
                         </a>
                         <hr>
                         <a class="item-side-menu" href="#">
-                            <h4 class="card-title">HISTÓRICO DE CANDIDATURAS</h4>
-                            <p class="card-text">Veja como estão as vagas que você
-                                se candidatou.</p>
+                            <h4 class="card-title">VAGAS ABERTAS</h4>
+                            <p class="card-text">
+                                Veja a situação das vagas.
+                            </p>
                         </a>
                         <hr>
-                        <a class="item-side-menu" href="#">
-                            <h4 class="card-title">VAGAS RECOMENDADAS</h4>
-                            <p class="card-text">Veja quais vagas se encaixam com
-                                o seu perfil.</p>
+                        <a class="item-side-menu" href="#hi">
+                            <h4 class="card-title">HISTÓRICO DE VAGAS</h4>
+                            <p class="card-text">
+                                Veja detalhes das vagas que já foram fechadas.
+                            </p>
                         </a>
                     </div>
                     <div class="card-footer text-muted">
-                        <form>
-                            <label for="busca" class="common">Pesquisar vagas</label>
+                        <form method="POST" action="">
+                            <label for="busca">Pesquisar currículos</label>
                             <div class="input-group">
                                 <input id="busca" name="busca" type="search" placeholder="Pesquisar" class="form-control"
                                     required="required">
                                 <div class="input-group-append">
-                                    <button type="submit" class=" btn fas fa-search search-button"></button>
+                                    <button type="submit" class="btn fas fa-search search-button"></button>
                                 </div>
                             </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -640,6 +668,7 @@
     </main>
 
     <script src="../../js/navbar.js"></script>
+    <script src="../../js/adicionar-vaga.js"></script>
     <!-- SCRIPTS BOOTSTRAP E JAVASCRIPT -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -647,42 +676,6 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <script>
-        var estado = document.getElementById('estado');
-        xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://servicodados.ibge.gov.br/api/v1/localidades/estados");
-        xhr.send();
-        xhr.addEventListener("load", function () {
-            estados = JSON.parse(xhr.responseText);
-            estados.forEach(function (uf) {
-                op = document.createElement('option');
-                op.setAttribute('value', uf.sigla);
-                op.setAttribute('id', uf.id);
-                op.textContent = uf.nome;
-                estado.appendChild(op);
-            })
-
-        });
-        estado.addEventListener('change', function () {
-            
-            if (this.value) {
-                let cidade = document.getElementById('cidade');
-                xhr = new XMLHttpRequest();
-                xhr.open("GET", "https://servicodados.ibge.gov.br/api/v1/localidades/estados/" + this.id + "/municipios");
-                xhr.send();
-                xhr.addEventListener("load", function () {
-                    cidades = JSON.parse(xhr.responseText);
-                    cidades.forEach(function (ci) {
-                        op = document.createElement('option');
-                        op.setAttribute('value', ci.none);
-                        op.textContent = uf.nome;
-                        cidade.appendChild(op);
-                    })
-
-                });
-            }
-        })
-    </script>
 </body>
 
 </html>

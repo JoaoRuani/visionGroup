@@ -35,10 +35,10 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Para ver os candidadatos você precisa registrar sua empresa</p>
+                    <p>Para ver os candidatos você precisa registrar sua empresa</p>
                 </div>
                 <div class="modal-footer">
-                    <a role="button" href="www/cadastro-empresa/" class="btn btn-primary">Cadastrar</a>
+                    <a role="button" href="www/cadastro-empresa.html" class="btn btn-primary">Cadastrar</a>
                 </div>
             </div>
         </div>
@@ -51,20 +51,20 @@
             </button>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link text-body" id ="elogin" href="www/painel-candidato/">Para a empresa <span class="item-menu-icon fas fa-briefcase"></span></a>
+                    <li class="nav-item active">                    <!--Esse link deve ser alterado para login-empresa caso o usuário não esteja logado-->
+                        <a class="nav-link text-body" id ="elogin" href="www/painel-empresa.html">Para a empresa <span class="item-menu-icon fas fa-briefcase"></span></a>
+                    </li>
+                    <li class="nav-item">                           <!--Esse link deve ser alterado para login-candidato caso o usuário não esteja logado-->
+                        <a class="nav-link text-body" id="clogin" href="www/painel-empresa.html">Para o candidato <span class="item-menu-icon fas fa-user-tie"></span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-body" id="clogin" href="www/painel-candidato/">Para o candidato <span class="item-menu-icon fas fa-user-tie"></span></a>
+                        <a class="nav-link text-body" id="CC" href="www/cadastro-candidato.html">Cadastrar Currículo <span class="item-menu-icon fas fa-file-invoice"></span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-body" id="CC" href="www/cadastro-candidato/">Cadastrar Currículo <span class="item-menu-icon fas fa-file-invoice"></span></a>
+                        <a class="nav-link text-body" id="CE" href="www/cadastro-empresa.html">Cadastrar Empresa <span class="item-menu-icon fas fa-building"></span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-body" id="CE" href="www/cadastro-empresa/">Cadastrar Empresa <span class="item-menu-icon fas fa-building"></span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-body" href="#">Como funciona <span class="item-menu-icon fas fa-question-circle"></span></a>
+                        <a class="nav-link text-body" href="www/como-funciona.html">Como funciona <span class="item-menu-icon fas fa-question-circle"></span></a>
                     </li>
                     <span class="dropdown-divider"></span>
                     <div class="profile-logged">
@@ -74,7 +74,7 @@
                             <a class="nav-link dropdown-toggle profile-name" href="#" id="profile-options" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
                             <div class="dropdown-menu profile-access-border-dropdown" aria-labelledby="profile-options">
-                                <a class="dropdown-item profile-option" href="www/painel-candidato/"></a>
+                                <a class="dropdown-item profile-option" href="#"></a><!-- Esses links deverão ser alterados conforme o tipo de usuário -->
                                 <a class="dropdown-item profile-option" href="#"></a>
                                 <a class="dropdown-item profile-option" href="#"></a>
                                 <a class="dropdown-item profile-option" href="#"></a>
@@ -106,6 +106,7 @@
                     </div>
                 </form>
             </div>
+            <!-- Se possível retirar caso o usuário esteja logado-->
             <a role="button" href="#" class="btn btn-block register-button">CADASTRAR MEU CURRÍCULO!</a>
         </div>
     </header>
@@ -121,7 +122,7 @@
                     <div class="card card-carousel fadein">
 
                         <div class="card-body">
-                            <h5 class="card-title carousel-item-title">Engenheiro de software</h5>
+                            <a href="www/vaga.html"><h5 class="card-title carousel-item-title">Engenheiro de software</h5></a>
                             <p class="card-subtitle mb-2 text-muted font-italic carousel-item-subtitle">Presidente
                                 Prudente -
                                 SP</p>
@@ -137,7 +138,7 @@
                     <!-- Final do card da vaga -->
                     <div class="card card-carousel fadein">
                         <div class="card-body">
-                            <h5 class="card-title carousel-item-title">Engenheiro de software</h5>
+                            <a href="www/vaga.html"><h5 class="card-title carousel-item-title">Engenheiro de software</h5></a>
                             <p class="card-subtitle mb-2 text-muted font-italic carousel-item-subtitle">Presidente
                                 Prudente -
                                 SP</p>
@@ -155,7 +156,7 @@
                 <div class="col-lg-6">
                     <div class="card card-carousel fadein">
                         <div class="card-body">
-                            <h5 class="card-title carousel-item-title">Engenheiro de software</h5>
+                            <a href="www/vaga.html"><h5 class="card-title carousel-item-title">Engenheiro de software</h5></a>
                             <p class="card-subtitle mb-2 text-muted font-italic carousel-item-subtitle">Presidente
                                 Prudente -
                                 SP</p>
@@ -171,7 +172,7 @@
                 <div class="col-lg-6">
                     <div class="card card-carousel fadein">
                         <div class="card-body">
-                            <h5 class="card-title carousel-item-title">Engenheiro de software</h5>
+                            <a href="www/vaga.html"><h5 class="card-title carousel-item-title">Engenheiro de software</h5></a>
                             <p class="card-subtitle mb-2 text-muted font-italic carousel-item-subtitle">Presidente
                                 Prudente -
                                 SP</p>
@@ -245,7 +246,7 @@
                 </div>
             </div>
 
-
+            <!-- Se possível retirar caso o usuário esteja logado-->
             <a role="button" href="#" class="btn btn-block register-button mt-3 blue">CADASTRAR MEU CURRÍCULO!</a>
         </div>
     </section>
@@ -255,12 +256,12 @@
                 <div class="col-12 col-sm-6 col-xl-4">
                     <h6 class="list-title">LINKS ÚTEIS</h6>
                     <ul class="list">
-                        <li class="list-item"><a href="" class="list-link-item">Home</a></li>
-                        <li class="list-item"><a href="" class="list-link-item">Sobre nós</a></li>
-                        <li class="list-item"><a href="" class="list-link-item">Escola Conectada</a></li>
-                        <li class="list-item"><a href="" class="list-link-item">Consultoria</a></li>
-                        <li class="list-item"><a href="" class="list-link-item">Educação Corporativa</a></li>
-                        <li class="list-item"><a href="" class="list-link-item">Recrutamento Inteligente</a></li>
+                        <li class="list-item"><a href="http://www.visiongroupsolucoes.com.br" class="list-link-item">Home</a></li>
+                        <li class="list-item"><a href="http://www.visiongroupsolucoes.com.br/index.php#sobre" class="list-link-item">Sobre nós</a></li>
+                        <li class="list-item"><a href="http://www.visiongroupsolucoes.com.br/escolaConectada.php" class="list-link-item">Escola Conectada</a></li>
+                        <li class="list-item"><a href="http://www.visiongroupsolucoes.com.br/consultoria.php" class="list-link-item">Consultoria</a></li>
+                        <li class="list-item"><a href="http://www.visiongroupsolucoes.com.br/aulaParticular.php" class="list-link-item">Educação Corporativa</a></li>
+                        <li class="list-item"><a href="#" class="list-link-item">Recrutamento Inteligente</a></li>
                     </ul>
                 </div>
 
@@ -268,8 +269,8 @@
                 <div class="col-12 col-sm-6 col-xl-4">
                     <h6 class="list-title">ESTAMOS NAS REDES SOCIAIS</h6>
                     <ul class="list">
-                        <li class="list-social-item"><a href="" class="list-social-link"><span class="fab fa-facebook-square"></a></li>
-                        <li class="list-social-item"><a href="" class="list-social-link"><span class="fab fa-instagram"></span></a></li>
+                        <li class="list-social-item"><a href="https://www.facebook.com/visiongroupoficialpp/" class="list-social-link"><span class="fab fa-facebook-square"></a></li>
+                        <li class="list-social-item"><a href="https://www.instagram.com/visiongroupoficial/" class="list-social-link"><span class="fab fa-instagram"></span></a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-xl-4">

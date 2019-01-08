@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta name="description" content="Encontre as pessoas ideais para a sua empresa com os currículo da Vision Group">
+    <meta name="keywords" content="VisionGroup, Vision Group, Recrutamento, Vagas, Emprego, Empresas, Contratado, buscar">
+    <meta name="author" content="Vision Group">
+
+    <link rel="stylesheet" href="../vendor/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="../img/favicon.png" />
+
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/painel-empresa.css">
+
+    <title>Histórico de vagas</title>
+</head>
+
+<body>
+    <!-- MODAL -->
+    <div class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Fechar</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Têm certeza que deseja fechar a vaga?</p>
+                </div>
+                <div class="modal-footer container">
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="btn btn-danger" data-dismiss="modal">CANCELAR</button>
+                        </div>
+                        <div class="col-6">
+                            <!-- Botão para fechar a vaga -->
+                            <button class="btn btn-primary">FECHAR VAGA</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar bg-white navbar-expand-lg shadow">
+            <a class="navbar-brand" href="../index.html"><img src="../img/OfficialLogo.png" class="logo"></a>
+            <button class="navbar-toggler btn-light btn" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="fas fa-bars" id="menu-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-body" id="elogin" href="painel-empresa.html">Para a empresa <span class="item-menu-icon fas fa-briefcase"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" id="clogin" href="painel-candidato.html">Para o candidato <span
+                                class="item-menu-icon fas fa-user-tie"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="cadastro-candidato.html" id="CC">Cadastrar Currículo <span
+                                class="item-menu-icon fas fa-file-invoice"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="cadastro-empresa.html" id="CE">Cadastrar Empresa <span
+                                class="item-menu-icon fas fa-building"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="como-funciona.html">Como funciona <span class="item-menu-icon fas fa-question-circle"></span></a>
+                    </li>
+                    <span class="dropdown-divider"></span>
+                    <div class="profile-logged">
+                        <!-- d-none to disappear-->
+                        <p class="user-connected text-center d-lg-none">Conectado como:</p>
+                        <li class="nav-item profile-access-border dropdown text-center">
+                            <a class="nav-link dropdown-toggle profile-name" href="#" id="profile-options" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                            <div class="dropdown-menu profile-access-border-dropdown" aria-labelledby="profile-options">
+                                <a class="dropdown-item profile-option" href="#"></a><!-- Esses links deverão ser alterados conforme o tipo de usuário -->
+                                <a class="dropdown-item profile-option" href="#"></a>
+                                <a class="dropdown-item profile-option" href="#"></a>
+                                <a class="dropdown-item profile-option" href="#"></a>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="dropdown">
+        <a href="adicionar-vaga.html" class="btn-block btn btn-white" role="button">
+            <span class="fas fa-plus-circle"></span>
+            Adicionar vaga
+        </a>
+    </div>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8">
+                <section class="mt-4">
+                    <article class="pb-2">
+                        <h2>Histórico das vagas</h2>
+                        <p>Veja as vagas que já foram fechadas em quem são os contradados</p>
+                    </article>
+                    <h3 class="text-muted h4 container d-none">Você ainda não se candidatou a vagas</h3>
+                    <div class="card bg-white pb-2 box-shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Auxiliar Administrativo Financeiro</h5>
+                            <p class="mb-1 card-subtitle">Publicado em 29/11/2018</p>
+                            <p class="text-muted mb-2 card-qtd-vagas"><strong>2 vagas:</strong> Presidente Prudente -
+                                SP</p>
+                            <p class="card-text">
+                                Atuará com a organização e controle de materiais e produtos (estoque).
+                                Executar e organizar agenda dos eventos.
+                                Atendimento e relacionamento com o consumidor.
+                                Abertura e fechamento do escritório.
+                                Apoio presencial durante os eventos.
+                            </p>
+                            <hr>
+                            <a href="curriculo-candidatos.html" class="d-block"><strong>30</strong> candidatos enviaram currículos</a>
+                            <a href="curriculo-candidatos.html" class="d-block"><strong>5</strong> candidatos recomendados para a vaga</a>
+                            <p class="text-right lead"><a href="curriculo-candidatos.html" class="d-block"><strong>2</strong> candidatos
+                                    contratados</a></p>
+                            <div class="row mt-4">
+                                <div class="col-6">
+                                    <a role="button" href="adicionar-vaga.html" class="btn edit-button">
+                                        <span class="fas fa-edit"></span> EDITAR VAGA
+                                        <span class="sr-only">Editar</span>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <!-- Botão para reabertura da vaga -->
+                                    <button class="btn edit-button">
+                                        <span class="fas fa-angle-up close-icon"></span> REABRIR VAGA
+                                        <span class="sr-only">Reabrir vaga</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-white pb-2 box-shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Auxiliar Administrativo Financeiro</h5>
+                            <p class="mb-1 card-subtitle">Publicado em 29/11/2018</p>
+                            <p class="text-muted mb-2 card-qtd-vagas">
+                                <strong>2 vagas:</strong> Presidente Prudente - SP
+                            </p>
+                            <p class="card-text">
+                                Atuará com a organização e controle de materiais e produtos (estoque).
+                                Executar e organizar agenda dos eventos.
+                                Atendimento e relacionamento com o consumidor.
+                                Abertura e fechamento do escritório.
+                                Apoio presencial durante os eventos.
+                            </p>
+                            <hr>
+                            <a href="#" class="d-block"><strong>30</strong> candidatos enviaram currículos</a>
+                            <a href="#" class="d-block"><strong>5</strong> candidatos recomendados para a vaga</a>
+                            <p class="text-right lead"><a href="curriculo-candidatos.html" class="d-block"><strong>Nenhum</strong> candidato
+                                    contratado</a></p>
+                            <div class="row mt-4">
+                                <div class="col-6">
+                                    <a role="button" href="adicionar-vaga.html" class="btn edit-button">
+                                        <span class="fas fa-edit"></span> EDITAR VAGA
+                                        <span class="sr-only">Editar</span>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn edit-button">
+                                        <span class="fas fa-angle-up close-icon"></span> REABRIR VAGA
+                                        <span class="sr-only">Reabrir vaga</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="col-12 col-lg-4 d-lg-block d-none mt-5">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>ÁREA DA EMPRESA</h3>
+                    </div>
+                    <div class="card-body">
+                        <a class="item-side-menu" href="perfil-empresa.html">
+                            <h4 class="card-title">PERFIL DA EMPRESA</h4>
+                            <p class="card-text">
+                                Conte um pouco aos candidatos sobre a empresa e como é a rotina de trabalho.
+                            </p>
+                        </a>
+                        <hr>
+                        <a class="item-side-menu" href="vagas-abertas.html">
+                            <h4 class="card-title">VAGAS ABERTAS</h4>
+                            <p class="card-text">
+                                Veja a situação das vagas.
+                            </p>
+                        </a>
+                        <hr>
+                        <a class="item-side-menu" href="historico-vagas.html">
+                            <h4 class="card-title">HISTÓRICO DE VAGAS</h4>
+                            <p class="card-text">
+                                Veja detalhes das vagas que já foram fechadas.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <form method="POST" action="">
+                            <label for="busca">Pesquisar currículos</label>
+                            <div class="input-group">
+                                <input id="busca" name="busca" type="search" placeholder="Pesquisar" class="form-control"
+                                    required="required">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn fas fa-search search-button"></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-xl-4">
+                    <h6 class="list-title">LINKS ÚTEIS</h6>
+                    <ul class="list">
+                        <li class="list-item"><a href="http://www.visiongroupsolucoes.com.br" class="list-link-item">Home</a></li>
+                        <li class="list-item"><a href="http://www.visiongroupsolucoes.com.br/index.php#sobre" class="list-link-item">Sobre
+                                nós</a></li>
+                        <li class="list-item"><a href="http://www.visiongroupsolucoes.com.br/escolaConectada.php" class="list-link-item">Escola
+                                Conectada</a></li>
+                        <li class="list-item"><a href="http://www.visiongroupsolucoes.com.br/consultoria.php" class="list-link-item">Consultoria</a></li>
+                        <li class="list-item"><a href="http://www.visiongroupsolucoes.com.br/aulaParticular.php" class="list-link-item">Educação
+                                Corporativa</a></li>
+                        <li class="list-item"><a href="#" class="list-link-item">Recrutamento Inteligente</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-4">
+                    <h6 class="list-title">ESTAMOS NAS REDES SOCIAIS</h6>
+                    <ul class="list">
+                        <li class="list-social-item"><a href="https://www.facebook.com/visiongroupoficialpp/" class="list-social-link"><span
+                                    class="fab fa-facebook-square"></a></li>
+                        <li class="list-social-item"><a href="https://www.instagram.com/visiongroupoficial/" class="list-social-link"><span
+                                    class="fab fa-instagram"></span></a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-xl-4">
+                    <h6 class="list-title 4">CONTATO</h6>
+                    <ul class="list">
+                        <li class="list-item">visiongroup@visiongroupsolucoes.com.br</li>
+                        <li class="list-item">(18) 98801-5611</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="border-white mx-3">
+        <p class="text-center copyright mb-1">Copyright 2018 Vision Group - All Rights Reserved</p>
+        <p class="text-center list-title mb-0 pb-3">Desenvolvido por Vision Group</p>
+    </footer>
+    <script src="../js/navbar.js"></script>
+    <!-- SCRIPTS BOOTSTRAP E JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

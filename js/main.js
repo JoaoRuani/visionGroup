@@ -6,10 +6,10 @@ button.forEach(function (e) {
     e.href = 'www/cadastro-candidato/';
 });
 if (!logged) {
-    elogin.href = "www/login-empresa/";
-    clogin.href = "www/login-candidato/";
+    elogin.href = "www/login-empresa.html";
+    clogin.href = "www/login-candidato.html";
 }
-else{
+else {
     elogin.href = "#";
     clogin.href = "#";
 }
@@ -18,14 +18,14 @@ select.addEventListener('input', function () {
         text.textContent = "PROCURANDO A VAGA IDEAL?";
         button.forEach(function (e) {
             e.textContent = 'CADASTRAR MEU CURRÍCULO!';
-            e.href = 'www/cadastro-candidato/';
+            e.href = 'www/cadastro-candidato.html';
         });
     }
     else {
         text.textContent = "PROCURANDO O CANDIDATO IDEAL?";
         button.forEach(function (e) {
             e.textContent = 'CADASTRAR MINHA EMPRESA!';
-            e.href = 'www/cadastro-empresa/';
+            e.href = 'www/cadastro-empresa.html';
         });
     }
 });
@@ -33,9 +33,11 @@ select.addEventListener('input', function () {
 //Show modal
 searchButton = document.querySelector(".search-button");
 searchButton.addEventListener('click', function (e) {
-    if (select.value == "empresa" && !logged) {
-        e.preventDefault();
-        $('.modal').modal('show');
+    if (select.value == "empresa") {
+        if (!isCompany || !logged) {
+            e.preventDefault();
+            $('.modal').modal('show');
+        }
     }
 });
 
